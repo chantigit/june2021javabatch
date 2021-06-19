@@ -1,0 +1,19 @@
+1.Ramu & Fyroz  => Google (IT-Android) 	=>2019(MCA) & 2015(MCA) 
+2.Srikar	=> HCL (DevOps)		=>2016(EEE)
+3.Varun		=> Wissen (BigData)	=>2016(EEE)
+4.Vinay		=> HCL (JavaDev)	=>2016(CSE)
+=====================================================================
+
+Java:	Primary Name : OAK
+-----
+Java Developer Name & Compnay	=>	James Gosling with GreenTeam, Sun Micro System in 1990s(www.sun.com) (Oracle from 2010)
+Java software name 		=>	JDK = C+I+L (Compiler(javac) + Interpreter(java) + Libraries (jre))
+JDK versions			=>
+
+	1.Primary Level		=>	JDK 1.0    to 	JDK 1.1.8
+	2.Seconadary Level	=>	JDK 1.2    to	Latest	(JDK 1.15 => Java15)
+	
+
+	Stable Versions : JDK 1.8 (java8) or JDK 1.11 (java11)
+
+SCJP/OCJP

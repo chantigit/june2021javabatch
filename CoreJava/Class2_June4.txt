@@ -1,0 +1,22 @@
+=====================================================================
+
+Java:	Primary Name : OAK
+-----
+Java Developer Name & Compnay	=>	James Gosling with GreenTeam, Sun Micro System in 1990s(www.sun.com) (Oracle from 2010)
+Java software name 		=>	JDK = C+I+L (Compiler(javac) + Interpreter(java) + Libraries (jre))
+JDK versions			=>
+
+	1.Primary Level		=>	JDK 1.0    to 	JDK 1.1.8
+	2.Seconadary Level	=>	JDK 1.2    to	Latest	(JDK 1.15 => Java15)
+	
+
+	Stable Versions : JDK 1.8 (java8) or JDK 1.11 (java11)
+
+Java Certification exam name=SCJP/OCJP
+=========================================================
+Java Editions:Java Seconadary Level:
+====================================
+	1.J2SE	: Standard Edition
+	2.J2EE  : Enterprise Edition
+	3.J2ME  : Mobile/Micro Edition
+

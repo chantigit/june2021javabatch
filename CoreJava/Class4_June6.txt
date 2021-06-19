@@ -1,0 +1,89 @@
+Java Programming Structure:
+===========================
+
+1.Documentation Section
+2.Package Delcaration section
+3.Import Delcaration section
+4.Class Delcaration section
+	class	ClassName
+	{
+		5.Field/Data Delcaration section
+		6.Constructor Delcaration section
+		7.toString() Delcaration section
+		8.Setter & Getter
+		9.User Defined Methods Delcaration section
+		10.Inner classes Delcaration section
+		11.Block Delcaration section
+		12.main() method Delcaration section
+		
+		public	static	void	main(String	args[])
+		{
+			//body of main
+		}
+	}
+====================================================================
+JAVA API=(PCM):     Package
+=========
+
+  PACKAGES	=	CLASS FILE (class/interface)	=	METHOD	
+
+ 1.java.lang    =>  System.class, String.class , Thread.class , Exception.class, Object.class , Math.class,.....
+
+ 2.java.io  	=>  File.class , FileReader.class, FileWriter.class ,...
+
+ 3.java.util    =>  Date.class , Scanner.class , List.class, Set.class ,Map.class ,....
+
+ 4.java.net
+
+ 5.java.awt
+
+ 6.java.sql
+
+ 7.java.applet
+
+ .....
+
+Note:
+	For all java programs a default package is provided i.e java.lang
+syntax1:	use specific class from a package
+	import	packagename.ClassName;			Ex:	import	java.io.File;
+syntax2:	use all classes from a package
+	import	packagename.*;				Ex:	import	java.io.*;
+=======================================================================
+PS1: Design calculator (+,-,*,/,%)
+PS2: Find cube of a number
+PS3: Find average of 6 numbers
+PS4: Find simple interest
+PS5: Find area of rectange
+PS6: Find area of cube
+PS7: Check given age is valid for voting or not
+PS8: Check given number is +ve or -ve or zero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

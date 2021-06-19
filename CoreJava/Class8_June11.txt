@@ -1,0 +1,100 @@
+Java Programming Structure
+Java Naming Conventions
+------------------------
+Java Tokens:
+============
+	Token is a piece of java code it can be anything as given below.
+
+Keywords		=	import	,class, public, static,void,double,if,else
+Identifiers		=	AreaOfCircle,radius,result,args
+Literals		=	4.5,0,"Radius cannot be negative"
+Variables		=	radius,result,args
+Constant		=	PI
+Datatype		=	double
+Operators		=	=,<,*,(),{},[],;,.
+Control Statements	=	if,else
+
+====================================================================
+5.Datatypes: (80% of core java)
+===========
+1.What is Datatype?
+2.Types of Datatypes ?
+3.List out all primitive types 
+4.Min & Max values of primitive types 
+5.Default values for primitive types 
+6.Wrapper classes for primitive types 
+7.TypeCasting using primitive types 
+8.Sizes of primitive types 
+---------------------------------------------------------------------
+
+			
+
+I.JAVA PROJECT1
+	II.JAVA PACKAGE1
+		III.JAVA CLASS1
+		III.JAVA CLASS2
+		III.JAVA CLASS3
+	II.JAVA PACKAGE2
+		III.JAVA CLASS1
+
+
+I.JAVA PROJECT2
+
+
+
+TypeCasting :
+=============
+1.TypeCasting using 8 primitives
+
+	1.Implicit TypeCasting	:	Lower  - higher
+	2.Explicit TypeCasting	:	Higher - lower
+
+2.TypeCasting using 8 wrapper class
+
+	1.Auto boxing
+	2.Auto unboxing
+
+Scanner class:
+==============
+	Used to accept the data at runtime of program
+	Belongs java.util package
+	
+1.nextByte()	: read byte from console
+2.nextShort()
+3.nextInt()
+4.nextLong()
+5.nextFloat()
+6.nextDouble()
+7.nextBoolean()
+
+8.next()		: read one word from console		=>  mahendra
+9.nextLine()		: read all words in a line from console => mahendra singh dhoni
+10.next().charAt(0)	: read one character from console
+
+
+
+1.Addition of 2 numbers:
+
+Expected output:
+
+	Enter value for num1 :100
+	Enter value for num2 :200
+
+	Sum is :  300
+
+===============================================================
+
+PS1: Design calculator (+,-,*,/,%)
+PS2: Find cube of a number
+PS3: Find average of 6 numbers
+PS4: Find simple interest
+PS5: Find area of rectange
+PS6: Find area of cube
+PS7: Check given age is valid for voting or not
+PS8: Check given number is +ve or -ve or zero
+
+
+
+
+
+

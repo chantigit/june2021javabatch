@@ -1,0 +1,106 @@
+Java Programming Structure:
+===========================
+1.Documentation Section
+2.Package Delcaration section
+3.Import Delcaration section
+4.Class Delcaration section
+	class	ClassName
+	{
+		5.Field/Data Delcaration section
+		6.Constructor Delcaration section
+		7.toString() Delcaration section
+		8.Setter & Getter
+		9.User Defined Methods Delcaration section
+		10.Inner classes Delcaration section
+		11.Block Delcaration section
+		12.main() method Delcaration section
+		
+		public	static	void	main(String	args[])
+		{
+			//body of main
+		}
+	}
+====================================================================
+Java Naming Conventions:
+------------------------
+
+package		java.lang,java.io,java.util,..			All packages are prepared in lowercase & separated by . operator
+
+class		System,String,Math,FileWriter,..		All classes are prepared each word first letter will be capital
+
+method		println(),main(),isEmpty(),toLowerCase()	All methods are prepared each word first letter will be capital except the 1st word
+
+constant	PI,MIN_VALUE,MIN_PRIORITY			All contants are prepared in uppercase & separated by _ operator
+
+varaible	out,in,err,length				All variables are prepared each word first letter will be capital except the 1st word
+
+
+
+Example:
+		A_B_C
+		appleIsFruit
+		MangoIsFruit
+		orangeIsInGreen()
+		today.is.sunday
+
+====================================================================
+Java Tokens:
+============
+	Token is a piece of java code it can be anything as given below.
+
+Keywords		=	import	,class, public, static,void,double,if,else
+Identifiers		=	AreaOfCircle,radius,result,args
+Literals		=	4.5,0,"Radius cannot be negative"
+Variables		=	radius,result,args
+Constant		=	PI
+Datatype		=	double
+Operators		=	=,<,*,(),{},[],;,.
+Control Statements	=	if,else
+
+====================================================================
+1.Keywords:
+-----------
+Do you know english language ?	=> OxFord Dict -> "word"   :: meaning + situation to use
+
+Do you know java language ?	=> Compiler	-> "words" :: meaning + situation to use
+
+Ex:	if	:reserved for testing the condition
+	import	:reserved for importing libraries
+	class	:reserved for creating userdefined class
+	
+JDK 1.6 : we have 53 list	
+JDK 1.9 : we have 63 keywords
+	 =>open, module, requires, transitive, exports, opens, to, uses, provides, and with
+
+Note:
+	1.Unused	(2)	:	goto,const
+	2.Listerals	(3)	:	true,false,null
+	3.Used keywords	(58)	:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

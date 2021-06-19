@@ -1,0 +1,276 @@
+Java Programming Structure
+Java Naming Conventions
+------------------------
+Java Tokens:
+============
+	Token is a piece of java code it can be anything as given below.
+
+Keywords		=	import	,class, public, static,void,double,if,else
+Identifiers		=	AreaOfCircle,radius,result,args
+Literals		=	4.5,0,"Radius cannot be negative"
+Variables		=	radius,result,args
+Constant		=	PI
+Datatype		=	double
+Operators		=	=,<,*,(),{},[],;,.
+Control Statements	=	if,else
+
+====================================================================
+Control Statements:(Flow Control Statements)
+===================
+
+1.Decision Making Statements:
+	1.if
+	2.if-else
+	3.nested - if -else
+	4.switch
+2.Loop Statements
+	1.while
+	2.do-while
+	3.for
+3.Jump Statements
+	1.break
+	2.continue
+--------------------------------------------------------------
+SwitchTask1:
+-----------
+Enter num1 : 100
+Enter num2 : 50
+
+Calc Menu
+1.Add
+2.Sub
+3.Mul
+4.Div
+5.Quit
+
+Enter your choice:	3
+
+	5000
+
+SwitchTask2:
+-----------
+Enter your account number	:	10001254
+Enter opening balance		:	5000
+
+Account Menu
+1.Check balance
+2.Diposit
+3.Withdraw
+4.Quit
+
+Enter your choice : 3
+
+
+SwitchTask3:
+-----------
+Check given character is vowel or not
+
+SwitchTask4:
+-----------
+Check no of days in a month
+	Enter a month number : 1
+	1 month having 31 days
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+2.Loop Statements
+	1.while
+	2.do-while
+	3.for
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1.while loop based tech programs:
+=================================
+
+n=725
+
+p1: Divide a number into digits		:	7	2	5
+p2: Print no of digits in a number	:	3
+p3: Print sum of digits			:	14
+p4: Print avg of digits			:	4
+p5: Print largest digit			:	7
+p6: Print smallest digit			:	2
+p7: Print even digits			:	1
+p8: Print odd digits			:	2
+p9: Print reverse of a number		:	527
+p10:Check given number is palindrome	:	not palindrome
+p11:Check given number is armstrong	:	n=23  : 2^2 + 3^2 =4+9=13
+						n=153 : 1^3+5^3+3^3=1+125+27=153
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2.do-while loop based tech programs:
+====================================
+Enter value for num1 :
+8
+Enter value for num2 :
+6
+Sum is:14
+Do u want do one more addition (yes/no)?
+yes
+Enter value for num1 :
+88
+Enter value for num2 :
+100
+Sum is:188
+Do u want do one more addition (yes/no)?
+yes
+
+
+Task1:Find simple interest
+Task2:Biggest of 3 numbers
+Task5,6,7: SwitchTask2,3,4
+______________________________________________________________________
+
+while Vs doWhile:
+=================
+		int x=10;
+		while(x>100) {
+			System.out.println("Good morning");
+		}
+		//1.first condition is evaluated then statements gets executed
+		//2.If condition fails first time then none of statements gets executed
+
+		int y=10;
+		do {
+			System.out.println("Good evening");
+		}while(y>100);
+		//1.first statements gets executed then condition is evaluated 
+		//2.Even condition fails first time once statements gets executed
+______________________________________________________________________
+
+3.for loop based tech programs:
+==============================
+Task1.Check given number is perfect or not
+Task2.Check given number is prime or not
+Task3.Print first 10 numbers in Fibonacci series
+		0	1	1	2	3	5	8	13	21	34		
+Task4.Print all Fibonacci series numbers below 30
+Task5.Check wether a given number is in Fibonacci series
+Task6.Print all perfect between 1 to 1000
+Task7.Print all prime between 1 to 100
+Task8.Print all armstrong between 1 to 1000
+
+	num=10		
+
+	num	%	naturalnumber up to num/2
+
+
+	10	%	1	=	0
+	10	%	2	=	0
+	10	%	3	=	1
+	10	%	4	=	2
+	10	%	5	=	0
+
+	num	%	i	==	0
+
+		here i values are factors
+______________________________________________________________________
+Array:
+======
+Storing the data using primitive datatypes:
+
+	int	age1=25;
+	int	age2=23;
+	int	age3=50;
+	int	age4=45;
+
+Storing the data using non-primitive(ARRAY) datatypes:
+
+	int	ages[]	=	{25,23,50,45};
+
+Def:
+	Collection of similar data elements (homogeneous) is called as array
+
+	-> array elements are accessed by INDEX
+	-> array INDEX starts from 0 & ends with SIZE-1 locations
+
+		25 is accessed by ages[0]	
+		45 is accessed by ages[3]
+
+	-> array variable stores address of first element
+	-> array size can be determined by using "length" variable
+
+Types of arrays:
+================
+	1.One Dimensional arrays
+	2.Two or multi Dimensional arrays
+	3.Jagged arrays
+______________________________________________________________________________
+
+			Primitive							Arrays(1-D)
+
+
+
+I.Declaration		datatype	variableName;			datatype	arrayName[]	=new	datatype[SIZE];			
+
+			int	age;					int		ages[]		=new	int[4];
+
+II.Initialization	variableName=value;				arrayName[INDEX]	=	VALUE;
+	
+			age=23;						ages[0]			=	25;
+									ages[1]			=	22;
+									ages[2]			=	49;
+									ages[3]			=	45;
+
+III.Accessing		sop(age);					sop(ages[0]);
+									sop(ages[1]);
+									sop(ages[2]);
+									sop(ages[3]);
+
+
+
+Task1:Store 5 persons heights & iterate them using for & foreach
+Task2:Store 6 persons names & iterate them using for & foreach
+Task3:Store 7 persons phone numbers & iterate them using for & foreach
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

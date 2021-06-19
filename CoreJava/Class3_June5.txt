@@ -1,0 +1,23 @@
+Java Programming Structure:
+===========================
+
+1.Documentation Section
+2.Package Delcaration section
+3.Import Delcaration section
+4.Class Delcaration section
+	class	ClassName
+	{
+		5.Field/Data Delcaration section
+		6.Constructor Delcaration section
+		7.toString() Delcaration section
+		8.Setter & Getter
+		9.User Defined Methods Delcaration section
+		10.Inner classes Delcaration section
+		11.Block Delcaration section
+		12.main() method Delcaration section
+		
+		public	static	void	main(String	args[])
+		{
+			//body of main
+		}
+	}

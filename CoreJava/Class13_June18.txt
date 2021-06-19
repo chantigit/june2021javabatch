@@ -1,0 +1,201 @@
+Java Programming Structure
+Java Naming Conventions
+Java Tokens:
+_____________________________________________________________________
+Array:
+======
+Storing the data using primitive datatypes:
+
+	int	age1=25;
+	int	age2=23;
+	int	age3=50;
+	int	age4=45;
+
+Storing the data using non-primitive(ARRAY) datatypes:
+
+	int	ages[]	=	{25,23,50,45};
+
+Def:
+	Collection of similar data elements (homogeneous) is called as array
+
+	-> array elements are accessed by INDEX
+	-> array INDEX starts from 0 & ends with SIZE-1 locations
+
+		25 is accessed by ages[0]	
+		45 is accessed by ages[3]
+
+	-> array variable stores address of first element
+	-> array size can be determined by using "length" variable
+	-> array size cannot be varie(STATIC in nature)
+
+Types of arrays:
+================
+	1.One Dimensional arrays
+	2.Two or multi Dimensional arrays
+	3.Jagged arrays
+______________________________________________________________________________
+
+			Primitive							Arrays(1-D)
+
+
+
+I.Declaration		datatype	variableName;			datatype	arrayName[]	=new	datatype[SIZE];			
+
+			int	age;					int		ages[]		=new	int[4];
+
+II.Initialization	variableName=value;				arrayName[INDEX]	=	VALUE;
+	
+			age=23;						ages[0]			=	25;
+									ages[1]			=	22;
+									ages[2]			=	49;
+									ages[3]			=	45;
+
+III.Accessing		sop(age);					sop(ages[0]);
+									sop(ages[1]);
+									sop(ages[2]);
+									sop(ages[3]);
+
+
+
+Task1:Store 5 persons heights & iterate them using for & foreach
+Task2:Store 6 persons names & iterate them using for & foreach
+Task3:Store 7 persons phone numbers & iterate them using for & foreach
+
+
+App1: Read 1 dimensional array from console & write into console
+EO:
+	Enter array size:	3
+	Enter 3 elements into array:
+	10
+	20
+	30
+	Array elements are:
+	10
+	20	
+	30
+
+Task1: Read 2, 1-dimensional arrays from console & write their sum into console
+EO:
+	Enter 2 arrays size:	3
+	Enter 3 elements into array1:
+	10
+	20
+	30
+	Enter 3 elements into array2:
+	100
+	200
+	300
+	Sum Array elements are:
+	110
+	220	
+	330
+
+Task2: Read 2, 1-dimensional arrays from console & merge them
+EO:
+	Enter first array size:	3
+	Enter 3 elements into array1:
+	10
+	20
+	30
+	Enter second array size: 2
+	Enter 2 elements into array2:
+	100
+	200
+	Merging Array elements are:
+	10
+	20
+	30	
+	100
+	200
+
+Task3: Zomato App
+EO 
+	Zomato Menu
+		Item	Cost
+		----	----
+		Nons	50
+		CB	450
+		CD	30
+	
+	Enter how many items you want to order :	3
+	
+	Enter 1  item :	Nons
+	Enter quantity :	2
+
+	Enter 2 item :	CB
+	Enter quantity :	1
+	
+	Enter 3 item :	CD
+	Enter quantity :	2
+
+	Thank you for choosing Zomato
+
+	Total	Item	price	:	1000
+		Packing Charges :	10
+		Delivery Charges :  	50
+		GST(18%)	:    	180
+		Jan16Coupon	:	50/-
+		WeekendDiscount :	5%
+
+		Total Price	:	______	/-
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Two / Multi Dimensional Arrays:
+===============================
+I.Declaration:
+-------------
+
+datatype	arrayName[][]	=new	datatype[ROWSIZE][COLSIZE];
+
+II.INITIALIZATION:
+------------------	
+
+arrayName[ROWINDEX][COLUMNINDEX]	=	VALUE;
+
+III.ACCESSING:
+--------------
+
+	sop(	arrayName[ROWINDEX][COLUMNINDEX]	);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+Java Programming Structure
+Java Naming Conventions
+------------------------
+Java Tokens:
+============
+	Token is a piece of java code it can be anything as given below.
+
+Keywords		=	import	,class, public, static,void,double,if,else
+Identifiers		=	AreaOfCircle,radius,result,args
+Literals		=	4.5,0,"Radius cannot be negative"
+Variables		=	radius,result,args
+Constant		=	PI
+Datatype		=	double
+Operators		=	=,<,*,(),{},[],;,.
+Control Statements	=	if,else
+
+====================================================================
+5.Datatypes: (80% of core java)
+===========
+
+1.What is Datatype?
+2.Types of Datatypes ?
+3.List out all primitive types 
+4.Min & Max values of primitive types 
+5.Default values for primitive types 
+6.Wrapper classes for primitive types 
+7.TypeCasting using primitive types 
+8.Sizes of primitive types 
+---------------------------------------------------------------------
+1.What is Datatype	:	 Decides what type of value has to be stored inside register
+2.Types of Datatypes 	:
+	
+	1.Primitive Types	: they can store single value inside a variable
+	Ex:
+	int	age1=26;
+	int	age2=22;
+	int	age3=45;
+	int	age4=50;
+	
+	List out all primitive types(8) :  				SIZE(bytes)	Default values
+		1.Integer related 	(4)	:byte,short,int,long	1,2,4,8		0
+		2.Float related 	(2)	:float,double		4,8		0.0
+		3.Others 		(2)	:char,boolean		2,1 bit		1space, false
+
+	Wrapper class : Byte,Short,Integer,Long,Float,Double,Character,Boolean  belongs java.lang packages
+	2.Non-Primitive Types	: they can store multiple values inside a variable
+	Ex:
+	int	ages[]={26,22,45,50};
+
+	List out all non-primitive types(6) : 1.Arrays 2.Strings 3.Class/Interface 4.Enum  5.Files 6.Collection (List,Set,Map)
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

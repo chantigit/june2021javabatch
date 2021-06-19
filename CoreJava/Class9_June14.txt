@@ -1,0 +1,78 @@
+Java Programming Structure
+Java Naming Conventions
+------------------------
+Java Tokens:
+============
+	Token is a piece of java code it can be anything as given below.
+
+Keywords		=	import	,class, public, static,void,double,if,else
+Identifiers		=	AreaOfCircle,radius,result,args
+Literals		=	4.5,0,"Radius cannot be negative"
+Variables		=	radius,result,args
+Constant		=	PI
+Datatype		=	double
+Operators		=	=,<,*,(),{},[],;,.
+Control Statements	=	if,else
+
+====================================================================
+Operators:
+---------
+	c=a+b;	=> Expression  (abc  ::operands  	=+;    :: operators)
+
+operators are used between operands
+
+	1.Unary operator	(a++)
+		Increment(++)
+		Decrement(--)
+		Minus(-)
+	2.Binary operator	(a+b)
+		Assignment (=)
+		Arithmetic (+,-,*,/,%)
+		Relational (<,>,<=,>=,!=,==)
+		Logical    (&&,||,!)
+		Bitwise	   (&,|,^,~,<<,>>)
+	3.Ternary operator	(a?b:c)		
+		Conditional (?:)
+
+====================================================================
+
+	C1	C2	C1&&C2	C1||C2	!C1
+
+	T	T	T	T	F
+
+	T	F	F	T	F		
+
+	F	T	F	T	T
+
+	F	F	F	F	T
+
+
+Task1: Biggest of 5 numbers
+Task2: Swapping of 2 numbers without 3rd variable
+Task3: Smallest of 4 numbers
+Task4: Check given year is leap or not
+Task5: Print no of digits in a number
+	Enter a number : 55
+	55 having 2 digits
+Task6: Check given number is Even or odd
+Task7: Check given character is vowel or not
+Task8: Check no of days in a month
+	Enter a month number : 1
+	1 month having 31 days
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
