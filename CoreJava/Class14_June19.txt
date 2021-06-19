@@ -1,0 +1,103 @@
+_______________________________________________________
+Types of arrays:
+================
+	1.One Dimensional arrays
+	2.Two or multi Dimensional arrays
+	3.Jagged arrays
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Two / Multi Dimensional Arrays:
+===============================
+I.Declaration:
+-------------
+
+datatype	arrayName[][]	=new	datatype[ROWSIZE][COLSIZE];
+
+II.INITIALIZATION:
+------------------	
+
+arrayName[ROWINDEX][COLUMNINDEX]	=	VALUE;
+
+III.ACCESSING:
+--------------
+
+	sop(	arrayName[ROWINDEX][COLUMNINDEX]	);
+
+
+
+Task1: Read 2 dimensional array from console & write into console
+EO:
+	Enter array row size	:	3
+	Enter array column size	:	3
+	Enter 9 elements into array:
+	10
+	20
+	30
+	....
+	Array elements are:
+	10	20	30	
+	40	50	60
+	70	80	90
+Task2: Read 2, 2-dimensional arrays from console & write their sum into console
+EO:
+	Enter 2 arrays row size		:	2
+	Enter 2 arrays column size	:	2
+	Enter 4 elements into array1:
+	10
+	20
+	30
+	40
+	Enter 4 elements into array2:
+	100
+	200
+	300	
+	400
+	Sum Array elements are:
+	110	220
+	330	440
+
+Task3:Print row1 elemenst 	(row2,row3)
+Task4:Print column1 elemenst 	(column2,column3)
+Task5:Print diagonal elements	
+Task6:Print anti-diagonal elemnets
+Task7:Print lower tri-angluar matrix
+Task8:Print upper tri-angluar matrix
+Task9:Print sum of ALL elements
+Task10:Print sum of diagonal & anti-diagonal elements
+Task11:Print patterns (STAR,NUMBER,ALPHABET)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
