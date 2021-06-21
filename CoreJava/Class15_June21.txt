@@ -1,0 +1,144 @@
+
+C	->	Structural(Functional) PL
+Cpp	->	Semi Structural(Functional) PL + Semi OOPL  (Class & Object)
+Java	->	Fully OOPL  (Class & Object)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+OOPS:	(Object Oriented Programming Structure)
+====
+	Java Programming Structure = Object Oriented Programming Structure 
+	OOPS princples are CO-APIE 
+
+OOPS Features(APIE):	
+--------------------
+	Encapsulation
+	Inheritance
+	Ploymorphism
+	Abstraction
+
+OOPS Features are implemented by CO:
+------------------------------------
+	Class
+	Object
+
+Q1. OOPL Vs OBPL:
+==================
+
+	Object Oriented Programming Language		Object Based Programming Language
+	
+	1.Ex:						1.Ex:
+		java,c#.net,python,cpp,...			Javascript,Vb.net,...
+
+	2.Provides inbuilt classes but user		2.Provides inbuilt classes & objects also
+	 has to create object
+	
+	3.Supports all oops features			3.Cannot Supports P & I features
+
+Q2. Adv OOPS:
+=============
+	1.Simplicity of code is achieved by 		Class & Object
+	2.Modularity of code is achieved by 		Encapsulation
+	3.Reusability of code is achieved by 		Inheritance
+	4.Readability of code is achieved by 		Polymorphism
+	5.Confidentiality of code is achieved by 	Abstraction
+
+Class & Object:
+===============
+
+class is a imaginary  thing in the world		which "describes" AB (Attributes+Behaviours)
+
+object is a physical existing thing in the world	which "defines" AB (Attributes+Behaviours)
+
+
+Attribute(DATA)		:	 What an object consists
+Behaviour(METHOD)	:	 What an object does
+
+		class					object	
+
+syntax		class	ClassName
+		{
+			D+M			ClassName  objectName=new	ClassName(ObjectValue);		
+		}
+
+example1:	class	Calculator
+		{
+			int num1,num2		Calculator  calc1=new 		Calculator(10,20);
+			int add(){}		Calculator  calc2=new 		Calculator(100,20);
+			int sub(){}		Calculator  calc3=new 		Calculator(10,200);
+			int mul(){}
+			int div(){}
+			int mod(){}
+		}
+
+En"capsul"ation:
+================
+	Binding A + B in a block (C) using modifiers is called as Encapsluation
+
+		class	Calculator
+		{
+			//DATA
+			MODIFIER	int num1,num2;	
+			//METHODS
+			MODIFIER	int add(){}			
+			MODIFIER	int sub(){}			
+			MODIFIER	int mul(){}
+			MODIFIER	int div(){}
+			MODIFIER	int mod(){}
+		}
+
+modifiers:	modifiers are keywords in java 
+-----------	modifiers are used to declare D+M
+modifiers types:
+	1.Access modifiers	
+		1.public	: Members(D+M) can visible to inside class & outside another class
+		2.private	: Members(D+M) can visible to inside class 
+		3.protected	: Members(D+M) can visible to parent class to child class
+	2.Non-Access modifiers
+		1.static
+		2.final
+		3.abstract
+		4.synchronized
+		...
+
+
+Scenario1: Complete a task/program by single class(D+M)
+		then select private access modifier to declare DATA+ METHODS
+
+Scenario2: Complete a task/program by more than single class(D+M)
+		then select either public or protected access modifier to declare DATA+ METHODS
+
+
+PS1:Addition of 2 numbers
+PS2:Design calculator
+PS3:Perform square & cube of a number
+PS4:Find simple interest
+PS5:Find area of circle
+PS6:Print factorial of a number
+PS7:Check given number is even or odd
+PS8:Check given age is valid for voting or not
+PS9:Print following reports of a student for 6 subject marks
+		total
+		average
+		percentage
+		grade	(A/B/C/D)
+		result of all subjects (P/F)
+		result of each subject
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
