@@ -1,0 +1,33 @@
+PS1:Addition of 2 numbers
+PS2:Design calculator
+PS3:Perform square & cube of a number
+PS4:Find simple interest
+PS5:Find area of circle
+PS6:Print factorial of a number
+PS7:Check given number is even or odd
+PS8:Check given age is valid for voting or not
+PS9:Print following reports of a student for 6 subject marks
+		total
+		average
+		percentage
+		grade	(A/B/C/D)
+		result of all subjects (P/F)
+		result of each subject		
+______________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,85 @@
+PS1:Addition of 2 numbers
+PS2:Design calculator
+PS3:Perform square & cube of a number
+PS4:Find simple interest
+PS5:Find area of circle
+PS6:Print factorial of a number
+PS7:Check given number is even or odd
+PS8:Check given age is valid for voting or not
+PS9:Print following reports of a student for 6 subject marks
+		total
+		average
+		percentage
+		grade	(A/B/C/D)
+		result of all subjects (P/F)
+		result of each subject		
+______________________________________________________________________________________________
+class	Demo
+{
+	Data
+
+	Constructor
+	toString()
+	Setters & Getters
+
+	methods
+}
+______________________________________________________________________________________________
+Constructor:
+===========
+Def:
+	It is used to Construct the object by supplying the values
+
+Features:
+
+	1.Name 			->	Same as class name
+	2.Access modifier	->	public
+	3.Return Type		->	no
+	4.Return Value		->	Current class object
+	5.Invoke		->	At the time of object creation
+	6.Overload		->	Yes
+
+Types:
+	1.No arg constructor  / Zero -arg constructor  / Non- paramterlized constructor 
+	2.All arg constructor / Paramterlized constructor 
+
+Note:
+	For every java class, compiler supplies 1 Non- paramterlized constructor i.e called as DEFAULT CONSTUCTOR.
+	DEFAULT CONSTUCTOR always supplies DEFAULT VALUES
+
+PS:	Find average of 3 double,sum of 4 long,biggest of 2 int.
+
+	Class Name 	: Task1
+	Data		: 9
+	Constructor1	: 3 double
+	Constructor2	: 4 long
+	Constructor3	: 2 int
+	methodNames	: printAvg(),printSum(),printLargestNumber()
+
+Diff between constructor & method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
