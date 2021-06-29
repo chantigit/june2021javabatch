@@ -1,0 +1,87 @@
+ENCAPSLUTION:
+=============
+______________________________________________________________________________________________
+class	Demo
+{
+	Variable types
+
+	Constructor types
+	toString()
+	Setters & Getters
+
+	methods types
+	
+	block types
+}
+______________________________________________________________________________________________
+this keyword:
+============
+1.Used access current class data
+2.Used access current class constructor
+3.Used access current class methods (Optional)
+______________________________________________________________________________________________
+INHERITANCE:
+============
+
+Def:Creating new class with existing class features
+===
+
+Keywords:
+	1. extends
+	2. protected
+	3. super
+	4. keyword
+	5. instanceof 
+Adv:
+	Reusability of code
+	Extensibility
+
+Types:
+	1.Single Level
+	2.Multi Level
+	3.Hierarchical
+	4.Hybrid
+
+Method Overriding
+	Reimplementing parent class methods in child class with same method header/signature(RT,MN,AL)
+	
+	
+@Override annotation
+
+final keyword:
+=============
+final class cannot be extended
+final method cannot be overriden
+final data cannot be modifies
+
+Object class methods:
+=====================
+
+Q1.In method overriding can we execute both parent & child class methods ?
+
+Yes we can using super keyword
+super keyword used to access parent members from child class
+
+Q2.this vs super
+
+this keyword:
+============
+1.Used access current class data
+2.Used access current class constructor
+3.Used access current class methods 
+
+super keyword:
+===============
+1.Used access parent class data from child class
+2.Used access parent class constructor from child class
+3.Used access parent class methods from child class
+
+Q3.new vs instanceof 
+
+
+
+
+
+
+
+

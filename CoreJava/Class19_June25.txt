@@ -1,0 +1,253 @@
+ENCAPSLUTION:
+=============
+______________________________________________________________________________________________
+class	Demo
+{
+	Data
+
+	Constructor
+	toString()
+	Setters & Getters
+
+	methods
+}
+______________________________________________________________________________________________
+	
+Variable Types inside the class:
+--------------------------------
+1.Instance/non-static variables(B)
+2.Static variables(BI)
+3.Static final variables
+4.Local variables
+
+Method Types inside the class:
+------------------------------
+1.Instance method(Object dependent method) 
+
+2.Static method(Object independent method) 
+
+Block Types inside the class:
+------------------------------
+1.Instance/non-static Block
+
+2.Static Block
+
+this keyword:
+============
+1.Used access current class data
+2.Used access current class constructor
+3.Used access current class methods (Optional)
+______________________________________________________________________________________________
+class Code1
+{
+	main()
+	{
+		int a=10,b;  #ERROR
+		sop(a+b);  
+	}
+}
+
+class Code2
+{
+	main()
+	{
+		static int a=10,b=100; #ERROR
+		sop(a+b);
+	}
+}
+
+class Code3
+{
+	main()
+	{
+		final int a=10,b=100;  #110
+		sop(a+b);
+	}
+}
+
+class Code4
+{
+	main()
+	{
+		public int a=10,b=100; #ERROR
+		sop(a+b);
+	}
+}
+
+class Code5
+{
+	int i;
+	static int j;
+	Code5()
+	{
+		i++;
+		j++;
+		sop(i,j);
+	}
+	main()
+	{
+		Code5 ob1=new Code5();  //1,1
+		Code5 ob2=new Code5();  //1,2
+		Code5 ob3=new Code5();  //1,3
+	}
+}
+
+
+class Code6
+{
+	void sayHi()
+	{
+		sop("Hi");
+	}
+	main()
+	{
+		sayHi();  //Error
+	}
+}
+
+class Code7
+{
+	static void sayHi()
+	{
+		sop("Hi");
+	}
+	main()
+	{
+		sayHi();    //hi 
+	}
+}
+
+
+class Code8
+{
+	void sayHi()
+	{
+		sop("Hi");
+	}
+	void sayHello()
+	{
+		sayHi();
+		sop("Hello");
+	}
+	main()
+	{
+		Code8 ob=bew Code8();
+		ob.sayHello();
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+class Code9
+{
+	static void sayHi()
+	{
+		sop("Hi");
+	}
+	static void sayHello()
+	{
+		sayHi();
+		sop("Hello");
+	}
+	main()
+	{
+		Code9 ob=new Code9();
+		ob.sayHello();
+	}
+}
+
+
+
+
+
+
+
+class Code10
+{
+	static void sayHi()
+	{
+		sop("Hi");
+	}
+	static void sayHello()
+	{
+		sayHi();
+		sop("Hello");
+	}
+	main()
+	{
+		sayHello();
+	}
+}
+
+
+
+
+
+
+
+
+class Code11
+{
+	void sayHi()
+	{
+		sop("Hi");
+	}
+	static void sayHello()
+	{
+		sayHi(); // ERROR
+		sop("Hello");
+	}
+	main()
+	{
+		sayHello();
+	}
+}
+
+class Code12
+{
+	static void sayHi()
+	{
+		sop("Hi");
+	}
+	void sayHello()
+	{
+		sayHi();		
+		sop("Hello");
+	}
+	main()
+	{
+		Code12 ob=new Code12();
+		ob.sayHello();		//No error
+	}
+}
+
+class Code13
+{
+	int i=10;
+	static int j=100;
+	void sayHi()
+	{
+		sop(i,j);
+	}
+	static void sayHello()
+	{
+		sop(i,j);		//Error
+	}
+	main()
+	{
+		Code13 ob=new Code13();
+		ob.sayHi();
+		Code13.sayHello();
+	}
+}
+
+
+

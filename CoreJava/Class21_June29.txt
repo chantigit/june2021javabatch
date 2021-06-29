@@ -1,0 +1,161 @@
+ENCAPSLUTION:
+=============
+______________________________________________________________________________________________
+class	Demo
+{
+	Variable types
+
+	Constructor types
+	toString()
+	Setters & Getters
+
+	methods types
+	
+	block types
+}`
+______________________________________________________________________________________________
+this keyword:
+============
+1.Used access current class data
+2.Used access current class constructor
+3.Used access current class methods (Optional)
+______________________________________________________________________________________________
+INHERITANCE:
+============
+
+Def:Creating new class with existing class features
+===
+
+Keywords:
+	1. extends
+	2. protected
+	3. super
+	4. final
+	5. instanceof 
+Adv:
+	Reusability of code
+	Extensibility
+
+Types:
+	1.Single Level
+	2.Multi Level
+	3.Hierarchical
+	4.Hybrid
+
+Method Overriding
+	Reimplementing parent class methods in child class with same method header/signature(RT,MN,AL)
+	
+	
+@Override annotation
+
+final keyword:
+=============
+final class cannot be extended
+final method cannot be overriden
+final data cannot be modifies
+
+
+Object class 11 methods:
+========================
+1.getClass()   	: returns class name of an object,cannot override
+2.hashCode()	: returns address of object in decimal format
+3.equals()		: returns true if both objects are poiting to same address
+4.clone()		: returns new object from existing class object
+5.finalize()	: it will invokes before object garbage collection
+6.toString()	: returns current class object data in string format
+
+
+Q1.How many ways we can create object for a class ?
+Q2.What is gc ?
+Q3.What is use of gc ?
+Q4.how to call gc ?
+
+
+
+Acc to OOPS we have 6 INHERITANCE Types:
+	1.Single Level
+	2.Multi Level
+	3.Hierarchical
+	4.Hybrid
+	5.Multiple
+	6.Multipath
+
+->Java "class"	 	will support only first 4 & rest of 2 are not supported
+->Java "interface"	will support 6 types
+
+Q5.Why java class cannot support Multiple & Multipath inheritances ?
+Q6.Can we extend more than one class ?
+
+
+TL1: substraction of 2 number
+
+class TM1{
+	int substraction(int a,int b){
+		return a-b;
+	}
+}
+class TM2{
+	long getSub(long a,long b){
+		return a>b?a-b:b-a;
+	}
+}
+class TM3{
+	void printSub(double a,double b){
+		System.out.println(a-b);
+	}
+}
+class TM4{
+	void finSub(int a,int b){
+		System.out.println(a+~b+1);
+	}
+}
+
+class TL1Test{
+	main(){
+		TM1  obj1=new TM1();
+		sop(obj1.substraction(10,20));
+	}
+}
+
+
+TL2: substraction of 2 number & use following interface
+
+	interface  SubInt
+	{
+		void doSub(int n1,int n2);    # Abstract Method (No Body)
+	}
+
+class TM1 implements SubInt
+{
+	@Override
+	public void doSub(int a,int a){
+		sop(a-b);
+	}
+}
+class TM2 implements SubInt{
+	@Override
+	public void doSub(int a,int a){
+		sop(a>b?a-b:b-a);
+	}
+}
+class TM3 implements SubInt{
+	@Override
+	public void doSub(int a,int a){
+		System.out.println(a-b);
+	}
+}
+class TM4 implements SubInt{
+	@Override
+	public void doSub(int a,int a){
+		System.out.println(a+~b+1);
+	}
+}
+
+class TL1Test{
+	main(){
+		SubInt  obj1=new TM1();
+		obj1.doSub(100,60);
+		SubInt  obj2=new TM2();
+		obj2.doSub(100,50);
+	}
+}

@@ -1,0 +1,120 @@
+PS1:Addition of 2 numbers
+PS2:Design calculator
+PS3:Perform square & cube of a number
+PS4:Find simple interest
+PS5:Find area of circle
+PS6:Print factorial of a number
+PS7:Check given number is even or odd
+PS8:Check given age is valid for voting or not
+PS9:Print following reports of a student for 6 subject marks
+		total
+		average
+		percentage
+		grade	(A/B/C/D)
+		result of all subjects (P/F)
+		result of each subject		
+______________________________________________________________________________________________
+class	Demo
+{
+	Data
+
+	Constructor
+	toString()
+	Setters & Getters
+
+	methods
+}
+______________________________________________________________________________________________
+Constructor:
+===========
+Def:
+	It is used to Construct the object by supplying the values
+
+Features:
+
+	1.Name 			->	Same as class name
+	2.Access modifier	->	public
+	3.Return Type		->	no
+	4.Return Value		->	Current class object
+	5.Invoke		->	At the time of object creation
+	6.Overload		->	Yes
+
+Types:
+	1.No arg constructor  / Zero -arg constructor  / Non- paramterlized constructor 
+	2.All arg constructor / Paramterlized constructor 
+
+Note:
+	For every java class, compiler supplies 1 Non- paramterlized constructor i.e called as DEFAULT CONSTUCTOR.
+	DEFAULT CONSTUCTOR always supplies DEFAULT VALUES
+
+PS:	Constructor Overload::Find average of 3 double,sum of 4 long,biggest of 2 int.
+
+	Class Name 	: Task1
+	Data		: 9
+	Constructor1	: 3 double
+	Constructor2	: 4 long
+	Constructor3	: 2 int
+	methodNames	: printAvg(),printSum(),printLargestNumber()
+
+Diff between constructor & method:
+=================================
+Factor			Constructor		Method
+
+			------------		-------
+1.Purpose
+
+2.Access Modifier	p/p/p			p/p/p
+
+3.Return Type		N			Y(void & non-void)
+
+4.Name			SACN			UW
+
+5.Return Value		CCOB			DEP
+
+6.Invoke		Implicitly at the OB C	Explicilty by USER
+
+7.Non-Access Modifier	NA			A
+  (S/F/A/...)
+8.Overloading		S			S
+
+9.Overriding		N			S
+
+10.Types		1.With Param		1.With Arg & With Param	
+			2.Without Param		2.Without Arg & With Param	
+						3.With Arg & Without Param	
+						4.Without Arg & Without Param	
+
+==================================================================================
+
+Variable Types inside the class:
+--------------------------------
+1.Instance/non-static variables(B)
+2.Static variables(BI)
+3.Static final variables
+4.Local variables
+
+Method Types inside the class:
+------------------------------
+1.Instance method(Object dependent method) 
+
+2.Static method(Object independent method) 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
