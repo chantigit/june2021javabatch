@@ -1,0 +1,21 @@
+class vs interface Vs abstract class:
+=====================================
+	Factors					CLASS					INTERFACE				ABSTRACT CLASS
+
+1.Declaration
+
+2.Data
+
+3.Constructor
+
+4.Object creation
+
+5.Method				CONCRETE METHODS		ABSTRACT  METHODS
+
+6.Multiple inheritance
+
+7.Usage keyword
+
+8.Super class/interface
+
+

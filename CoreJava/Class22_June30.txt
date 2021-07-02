@@ -164,7 +164,7 @@ Rules for interface:
 ===================
 1.KW				->interface
 2.D+M  				->D Must Init + M Must Header (AM)
-3.C					->NA   => OBJ NP
+3.C					-> NA   => OBJ NP
 4.implements KW  	=> I used by C
 5.implements KW		=> Multiple I can used by C
 *****
