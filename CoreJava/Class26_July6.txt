@@ -1,0 +1,104 @@
+Abstraction
+Class Vs Abstarct Class Vs Interfaces
+Package  	= Collection of Classes + Interfaces + Abstarct Classes
+Jar 		= Collection of jar packages 
+-------------------------------------------------------------
+Strings:	Collection / Group / Sequence / Array of characters is called string
+========
+I.Operations on String:
+-----------------------
+1.String Preparation
+2.String Concatenation
+3.String Comparasion
+
+II.String handling methods:
+--------------------------
+______________________________________________________________________________________
+1.String Preparation:
+=====================
+	1.Using char datatype
+	2.Using String class 		(from java.lang package)
+	3.Using StringBuffer class	(from java.lang package)
+	4.Using StringBuilder class	(from java.lang package)
+
+	//Acc c ,cpp & java
+	char 			name1[]= {'i','n','d','i','a'};		i-0 n-1 d-2 i-3 a-4
+	
+	//Without new keyword
+	String			name2="india";
+	//With new keyword
+	String  		name3=new String("india");
+	
+	StringBuffer	name4=new StringBuffer("india");
+	
+	StringBuilder   name5=new StringBuilder("india");
+	
+Note:
+=====
+1.JVM stores strings in "StringPoolArea" which are created by String class 
+2.JVM always checks wether string is exist in pool if it created without new keyword.
+3.The string object which is created by String class is always IMMUTABLE object.
+4.The string object which are created by StringBuffer & StringBuilder classes are always MUTABLE object.
+
+	
+2.String Concatenation:
+=======================
+	sop("Hi"+"Hello");		//HiHello
+	
+1.Using + operator
+2.Using concat() method from String class
+3.Using append() method from StringBuffer,StringBuilder classes
+
+Ex1:Using + operator
+	String s1="A";
+	s1=s1+"B";
+	sop(s1);		//AB
+	s1=s1+"C"
+	sop(s1);		//ABC
+	String s2=s1+"D";
+	sop(s1);		//ABC
+	sop(s2);		//ABCD
+	s2=s2+100;
+	sop(s2);		//ABCD100
+	s2=s2+3.69;
+	sop(s2);		//ABCD1003.69
+Ex2:Using concat() method
+	String s1="A";
+	s1.concat("B");
+	sop(s1);		//A
+	s1=s1.concat("C");
+	sop(s1);		//AC
+	String s2=s1.concat("D");
+	sop(s1);		//AC
+	sop(s2);		//ACD
+	
+	s1.concat(100);	//COMPILE TIME ERROR
+	
+3.String Comparasion:
+=====================
+1.Using == operator
+2.Using equals() & equalsIgonreCase() methods
+3.Using compareTo() method
+
+	String			name1="Apple";   	
+	String			name2="Apple";		
+	String			name3="apple";		
+	String			name4="Orange"; 
+	String			name5=new String("Apple");
+
+Note1:"==" 			operator compares strings based on ADDRESS return boolean values
+Note2:"equals()" 	method   compares strings based on CONTENT return boolean values
+
+	sop(name1 == name2 );
+	sop(name1 == name3 );
+	sop(name1 == name5 );
+	sop(name1 == name4 );
+	//T FFF
+	sop(name1.equals(name2) );
+	sop(name1.equals(name4) );
+	sop(name1.equals(name5) );
+	sop(name5.equals(name2) );
+	sop(name1.equals(name3) );//false 
+	//TFTTF
+	sop(name1.equalsIgonreCase(name3) );//true 
+

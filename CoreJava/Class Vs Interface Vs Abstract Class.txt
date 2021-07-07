@@ -10,12 +10,14 @@ class vs interface Vs abstract class:
 
 4.Object creation
 
-5.Method				CONCRETE METHODS		ABSTRACT  METHODS
+5.Method				CONCRETE METHODS		ABSTRACT  METHODS		CONCRETE + ABSTRACT
 
 6.Multiple inheritance
 
 7.Usage keyword
 
 8.Super class/interface
+
+9.Abstraction 				0%					100%					50%
 
 

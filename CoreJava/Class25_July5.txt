@@ -1,0 +1,155 @@
+ENCAPSLUTION:
+=============
+class	Demo
+{
+	Data/Variable types
+
+	Constructor types
+	toString()
+	Setters & Getters
+
+	Methods types
+	
+	block types
+}`
+______________________________________________________________________________________________
+INHERITANCE:
+============
+Def:Creating new class with existing class features
+===
+
+Keywords:
+	1. extends
+	2. protected
+	3. super
+	4. final
+	5. instanceof 
+Adv:
+	Reusability of code
+	Extensibility
+
+Types:
+	1.Single Level
+	2.Multi Level
+	3.Hierarchical
+	4.Hybrid
+
+Method Overriding
+	Reimplementing parent class methods in child class with same method header/signature(RT,MN,AL)
+	
+@Override annotation
+
+Rules for interface:
+===================
+1.KW				->interface
+2.D+M  				->D Must Init + M Must Header (AM)
+3.C					-> NA   => OBJ NP
+4.implements KW  	=> I used by C
+5.implements KW		=> Multiple I can used by C
+*****
+6.If a C impl any Int : that C must impl all AM From that Int
+7.extends    KW		=>	I1 used by I2
+8.extends    KW		=>	Multiple I can be used by one I
+9.Functional Int	-> 1 AM
+10.Marker Int 		-> 0 AM
+
+Def:
+===
+	Collection of static final fields + abstract methods
+	
+______________________________________________________________________________________________
+Polymorphism:
+============
+Poly 	-  many
+morphing-  forms/changes
+
+Def:
+	Doing many/multiple things by the same name
+Example:
+	Doing "payment" can be done by paytm/google pay/phone pay/debit/credit/...
+
+
+Polymorphism is achieved by methods 
+	1.Static  /Compiletime Polymorphism / Early binding
+	2.Dynamic /Runtime Polymorphism  / Late binding
+
+Static 	Polymorphism is implemented by METHOD OVERLOADING
+Dynamic Polymorphism is implemented by METHOD OVERRIDING
+
+
+METHOD OVERLOADING:
+===================
+Def:
+	Preparing multiple methods in a class with same method name & diff arg list
+	
+PS1:total of 2 items,3 items,4 items,5 items for zomato application
+
+Task1:swapping of 2 int,2 float,2 char,2 strings
+	Class Name 		: Exchage
+	4 method names	: swapping
+Task2:biggest of 2 int,3 long,4 double & 5 float 
+	Class Name 		: LargestNumber
+	4 method names	: bigNumber()
+	
+METHOD OVERRIDING:
+==================
+Def:
+	Re-implementing parent class method in child class with same method signature
+
+METHOD OVERLOADING Vs METHOD OVERRIDING:
+----------------------------------------
+Factors					METHOD OVERLOADING				METHOD OVERRIDING
+
+
+1.Def
+
+2.ReturnType			
+
+3.Name of method		
+
+4.Argument List			
+
+5.Instance methods										
+
+6.Static methods										
+
+7.final methods		
+
+8.Binding	
+
+Abstract Class:
+==============				
+
+Rules for Abstract class:
+=========================
+1.KW : abstract 
+2.AC = D+C+M
+	D  : init  or not init
+	C  : A  but OBJ NP
+	M  : CON + ABS
+
+3.AC can extends by NC
+4.If any NC can extends AC, That NC must be implement all AM from that AC
+5.An AC can extends one more AC
+6.An AC cannot extends more than one AC
+7.An AC can implement any no of interfaces
+
+
+Q1.How to invoke/access Abstract class constructors ?
+Ans:By it's child class through super keyword
+
+Abstraction:
+============
+Def:
+	Hiding implementation of service(method) & make visible of service(method) names.
+
+Ex: GotoMeeting App
+		->screen sharing
+		->audio sharing
+		->chat
+		->attendance
+		->recording
+		->mute & unmute 
+		->lock
+1.Abstraction is achieved by I.Class II.Interface III.Abstract Class
+2.Complete abstraction is achieved by INTERFACES
