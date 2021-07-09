@@ -1,0 +1,95 @@
+-------------------------------------------------------------
+Strings:	Collection / Group / Sequence / Array of characters is called string
+========
+I.Operations on String:
+-----------------------
+1.String Preparation    
+2.String Concatenation
+3.String Comparasion
+
+II.String handling methods:
+---------------------------
+1.concat() 		
+2.equals() 
+3.equalsIgonreCase()
+4.compareTo() 
+5.compareToIgnoreCase()
+
+6.length()
+7.isEmpty()
+8.toLowerCase()
+9.toUpperCase()
+10.replace()
+
+11.startsWith()
+12.endsWith()
+13.contains()
+14.trim()
+15.intern()			
+
+16.	substring(begin),
+	substring(begin,end)
+	
+17.	indexOf(int ch),
+	indexOf(int ch,int from)
+	indexOf(String str)
+	indexOf(String str,int from)
+	
+18.	lastIndexOf(ch)
+	lastIndexOf(String)
+	
+19.charAt()  			: Divide string into characters
+20.	split(regex)	 	: Divide string into words
+	split(regex,limit)
+
+StringTokenizer class:
+======================
+	Belongs to java.util package
+	Divide string into words/tokens
+Methods:
+	1.boolean	hasMoreTokens()
+	2.String 	nextToken()
+
+					String 		Vs   StringBuffer  	Vs 		StringBuilder
+		
+1.Package			java.lang		java.lang				java.lang
+
+2.Object Type		Immutable		Mutable					Mutable
+
+3.Memory Area		Pool/Heap		Heap					Heap
+
+4.Method Type		Non-Synch		Synch 					Non-Synch
+
+=========================================================
+Exception Handling:
+===================
+Error Vs Exception
+
+1.
+	Error is generated at compile time due to improper syntax
+	Error cannot handled
+
+2. 
+	Exceptions are generated at compile time & run time due to improper logic
+Types of exceptions
+
+I.UnChecked Exceptions	(These are not checked by compiler  & checked by interpreter at run time)
+
+	StringIndexOutOfBoundsException
+	NullPointerException
+	NegativeArraySizeException
+	ArrayIndexOutOfBoundsException
+	ArithmeticException
+	
+II.Checked Exceptions (These are checked by compiler at compile time)
+
+	FileNotFoundException
+	InterruptedException
+	IOException
+	
+Exceptions can be handled using following 5 keywords
+	1.try
+	2.catch
+	3.throw
+	4.throws
+	5.finnaly
