@@ -1,0 +1,88 @@
+=========================================================
+Exception Handling:
+===================
+Custom Exceptions or User defined exception class:
+==================================================
+Rule1:Make your class child to be "Exception" class
+	class MyException1	extends  Exception	
+	{
+	
+	}
+
+Rule2:Override toString() method
+	class MyException1	extends  Exception	
+	{
+		@Override
+		public String toString()
+		{
+			return "exception class + msg";
+		}
+	}
+=============================================================
+SINGLE THREAD EXECUTION:
+-----------------------
+I.output
+Job1.task1():i=1
+Job1.task1():i=2
+Job1.task1():i=3
+Job1.task1():i=4
+Job1.task1():i=5
+Job2.task2():i=6
+Job2.task2():i=7
+Job2.task2():i=8
+Job2.task2():i=9
+Job2.task2():i=10
+Job3.task3():i=11
+Job3.task3():i=12
+Job3.task3():i=13
+Job3.task3():i=14
+Job3.task3():i=15
+
+II.ob1,ob2,ob3 total execution time : 15 sec
+
+III.ob1,ob2,ob3 execution order     : sequential
+
+VI.ob2 waiting time					: 5 sec
+   ob3 waiting time                 : 10 sec
+ 
+V.Exception dependecy between ob1,ob2,ob3 : YES
+
+-------------------------------------------------------------
+MULTITHREAD EXECUTION:
+----------------------
+
+I.output
+	
+II.ob1,ob2,ob3 total execution time	: 5 Sec
+
+III.ob1,ob2,ob3 execution order   	: Simultaneosuly
+
+VI.ob2 waiting time					: 0 sec
+   ob3 waiting time					: 0 sec
+ 
+V.Exception dependecy between ob1,ob2,ob3  : No
+
+
+
+Rules to create User defined threads:
+=====================================
+
+Rule1:Make your class child to be "Thread" class
+	class MyThread1	extends  Thread	{
+	
+	}
+
+Rule2:Override run() method
+	@Override
+	public void run() {
+		//Here prepare code which you want to run by thread
+	}
+Rule3:Call that run() by the start() method
+
+Note:
+1.Thread class       belongs to java.lang package & it is a implemented class from Runnable interface
+2.Runnable interface belongs to java.lang package & it has one abstract method i.e run()
+
+
+
+

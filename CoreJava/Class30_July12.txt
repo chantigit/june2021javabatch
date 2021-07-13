@@ -1,0 +1,95 @@
+=========================================================
+Exception Handling:
+===================
+Error Vs Exception
+
+1.
+	Error is generated at compile time due to improper syntax
+	Error cannot handled
+
+2. 
+	Exceptions are generated at compile time & run time due to improper logic
+Types of exceptions
+
+I.UnChecked Exceptions	(These are not checked by compiler  & checked by interpreter at run time)
+
+	StringIndexOutOfBoundsException
+	NullPointerException
+	NegativeArraySizeException
+	ArrayIndexOutOfBoundsException
+	ArithmeticException
+	
+II.Checked Exceptions (These are checked by compiler at compile time)
+
+	FileNotFoundException
+	InterruptedException
+	IOException
+	SQLException
+	ServletException
+	JspException
+	
+Exceptions can be handled using following 5 keywords
+
+	1.try
+	2.catch
+	3.throw
+	4.throws
+	5.finnaly
+	
+	
+	1.try
+	2.catch
+	3.finnaly
+	
+	try
+	{
+		//Write code which monitor the exceptions 
+		//Case1:No exceptions 		=> try - finally
+		//Case2:Exception is exist 	=> try - first catch
+	}
+	catch(ExceptionClass1  ob)
+	{
+		//Write code which handled the exception1 is raised in try block
+		//After that control goes to finally block
+	}
+	catch(ExceptionClass2  ob)
+	{
+		//Write code which handled the exception2 is raised in try block
+		//After that control goes to finally block
+	}
+	...
+	finally
+	{
+		//Write code which is executed after try & catch block
+	}
+	
+
+Scenario1:  One exception in try with 1 catch block
+
+Scenario2:  Two exceptions in try with 2 catch blocks
+
+Scenario3:  Multiple exceptions in try with "Exception" class as catch block
+
+Scenario4:  Handling  Multiple exceptions using nested try blocks
+
+Scenario5:  Tracing the exceptions in project using "printStackTrace()" method
+
+Scenario6:  Try with out catch
+
+Scenario7:  Try with out finally
+
+Scenario8:  Netsed catch block
+
+throw  Vs throws:
+=================
+throw:
+------
+syntax:
+
+		throw   new  ExceptionClassName();
+	
+->This keyword throw single object	from try to catch block
+->Propagate exception from try to catch block
+->Always compiler propagate predefined exception classes automatically.
+->For user defined exception class we must use throw keyword
+
