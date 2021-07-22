@@ -1,0 +1,53 @@
+
+Q4.Explain Few Thread class methods ?
+
+	1.void run()					:Prepare logic which is being executed by thread
+	2.void start()					:It will calls run() method to start it's service
+	//SETTERS & GETTERS
+	3.String	getName()			:Return the name of thread (Default Names:Thread-0,Thread-1,..)
+	4.void      setName(name)		:Change name of thread
+	5.int 		getId()				:Return the id of thread which is set by JVM
+	6.int 		getPriority()		:Return the  priority of thread(Default priority: NORM_PRIORITY)
+	7.void 		setPriorty(priority):Change the prepare to MIN_PRIORITY or MAX_PRIORITY or 1 to 10
+	
+Q5.Can we execute multiple threads in sequnce ?
+Yes,using 8.join() method we can.
+	join method holds the current thread execution until it finish it's task & then it goes to dead state.
+	9.isAlive() method checks current thread is dead or not
+	
+Q6.What is data inconistency in multi threading ?
+	Or
+	What is locking mechanism in multi threading ?
+	Or
+	Use of synchronized keyword in Java ?
+
+Synchronized in Java:
+--------------------
+Multi-threaded programs may often come to a situation where multiple threads try to access the same resources 
+and finally produce erroneous and unforeseen results. 
+
+So it needs to be made sure by some synchronization method that only one thread can access the resource at a 
+given point of time.
+
+Inter thread communication:
+---------------------------
+To make communication beween the threads "java.lang.Object" class providing following 3 methods
+
+1.wait()
+2.notify()
+3.notifyAll()
+
+Note:
+ All above 3 methods must be used in synchronized area only.
+
+Q7.What is daemon thread & how it works?
+They run at background & provide the support for foreground threads
+Ex:
+	1.GC
+	2.Spell checker
+	3.Compiler
+Note:
+By default all threads which are created by user are foreground threads.
+To verify current thread is daemon or not we use "10.isDaemon()" method.
+"11.setDaemon(boolean)" method used to convert user thread to daemon thread.
+

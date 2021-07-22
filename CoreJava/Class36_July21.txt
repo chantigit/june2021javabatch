@@ -1,0 +1,55 @@
+IOStreams:
+==========
+All input & output related classes are given in "java.io" package.
+
+Stream is a flow of data.
+
+Types of streams:
+
+	1.Character Stream:
+		We can perform write & read operations on text related data.
+	2.Byte Stream:
+		We can perform write & read operations on any type(text/image/video/..) of data.
+		
+_______________________________________________________________________
+1.Character Stream related classes:
+==================================
+
+	1.File 				class	: Create directory/folder and files (14 methods)
+	2.FileWriter		class	: Write data into file				(write(c/c[]/str))
+	3.BufferedWriter	class	: Write data into file				(newLine())
+	4.PrintWriter		class	: Write data into file				(print(anytype) & println(anytype)  )
+	
+	5.FileReader		class	: Read data from file				int 	read()
+	6.BufferedReader	class	: Read data from file				String	readLine()
+	
+Q1.FileWriter Vs BufferedWriter ?
+Q2.FileWriter Vs PrintWriter ?
+Q3.FileReader Vs BufferedReader ?
+
+
+Note:
+1.Best class for writing data into the file is : PrintWriter
+2.Best class for read data from the file is : BufferedReader
+
+2.Byte Stream:
+==============
+
+1.FileOutputStream 		class
+2.FileInputStream 		class
+3.ObjectOutputStream 	class		:  writeObject()
+4.ObjectInputStream 	class		:  readObject()
+
+Task1:Copy data from one file to another file
+Task2:Read data from file & print
+	-> no of vowels
+	-> no of digits
+	-> no of spaces
+	-> no of words
+	-> no of lines
+Task3:Read 5 student(id,name,marks,age) objects from console & write into the file.
+Task4:Read 5 student objects from file & write them into console
+
+1.class Vs interface Vs abstract class
+2.exception handling 5 keywords
+3.synchronized keyword

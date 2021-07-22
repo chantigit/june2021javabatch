@@ -1,0 +1,24 @@
+IOStreams:
+==========
+All input & output related classes are given in "java.io" package.
+
+Stream is a flow of data.
+
+Types of streams:
+
+	1.Character Stream:
+		We can perform write & read operations on text related data.
+	2.Byte Stream:
+		We can perform write & read operations on any type(text/image/video/..) of data.
+		
+_______________________________________________________________________
+1.Character Stream related classes:
+==================================
+
+	1.File 				class	: Create directory/folder and files (14 methods)
+	2.FileWriter		class	: Write data into file				(write(c/c[]/str))
+	3.BufferedWriter	class	: Write data into file				(newLine())
+	4.PrintWriter		class	: Write data into file
+	5.FileReader		class	: Read data from file
+	6.BufferedReader	class	: Read data from file
+	

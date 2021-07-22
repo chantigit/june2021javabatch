@@ -1,0 +1,142 @@
+
+
+
+
+1.Array Vs Collection:
+=====================
+	int	a[]={10,8,99,777,5,8,6,33,157};
+	
+Arrays drawbacks : notifying that all we can achive with the Collections
+
+	- can we store heterogeneous elements in arrays   	?    No
+	- can we restrict duplicates arrays               	?    No
+	- can we store elements like "key,value"  pairs   	?    No
+	- can we make array as dynamic(growable at runtime)	?    No
+	- Is any readymade methods are avaialble in arrays to perform follwing operations ?
+		1. no of elements	: length
+		2. insert element at begin  , end , specific
+		3. remove element at begin  , end , specific
+		4. merging arrays
+		5. comparing arrays
+		6. sorting array
+		7. search an element in array
+		8. arrays is empty or not 
+		9. random accessing 
+		
+	
+
+
+
+
+
+2.Wrapper class :
+=================
+All 8 primitives are treated as readymade classes from java.lang packages are reffered as Wrapper Classes.
+
+Wrapper class are mainly used to wrapping/conversion data from one type to another.
+
+1.TypeCasting using 8 primitives:
+	1.Implicit TypeCasting
+	2.Explicit TypeCasting
+
+2.TypeCasting using 8 wrapper class:
+	1.Auto boxing
+	2.Auto unboxing
+	
+	1.String to any type 
+	2.Any type to String  
+	3.Any type to Any type
+
+
+
+
+
+
+
+
+
+
+
+3.Generics:
+===========
+Generics can allow user to work with specific type of data or any type of data.
+Generics can be declared using angular braces <GenericName>
+Generics can be declared in 2 levels
+
+	1.Method level Generic
+		<GenericName>  void myMethod1()
+		{
+		}
+	2.Class level Generic
+		class ClassName<GenericName>
+		{
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+5.DataStructure Basics:
+======================
+
+1.Linear DataStructure
+	Here memory organized sequential
+	Linear DataStructure are implemented by Arrays
+		1.Static Arrays  (Fixed 	arrays)
+		2.Dynamic Array	 (Growable 	arrays)
+		
+2.Non-Linear DataStructure
+	Here memory organized random
+	Non-Linear DataStructure are implemented by LinkedLists ( implemented by Pointers)
+		1.Single LinkedLists (Forward element accessing)
+		2.Double LinkedLists (Forward & Backward element accessing)
+
+3. Hashing DataStructure
+4. Balanced Tree DataStructure
+
+
+
+
+
+
+
+
+	
+2.Collection introduction:
+==========================
+java.util package provides 3 interfaces + 15 implemented classes to for COLLECTIONS
+	
+1.List interface & it's 4 implemented classes (ArrayList,Linkedlist,Stack,Vector)
+  Shape interface & it's 4 implemented classes C,S,T,R	
+
+	->allow duplicate values
+Ex:
+	Rihsi,Manu,Anish,Rishi,Raj,Manu,Anil,Arjun,.....
+
+2.Set interface & it's 3 implemented classes (HashSet,LinkedHashSet,TreeSet)	
+
+	->cannot allow duplicate values
+Ex:
+	506,501,502,505,503,504,............
+3.Map interface & it's 8 implemented classes (HashMap,LinkedHashMap,TreeMap,IdentityHashMap,WeakHashMap,Dictionary,Hashtable,Properties)	
+	->Cannot allow duplicate keys & allow duplciate values
+Ex:
+	rollno	names
+	(key)	(value)
+	501	Venu
+	502	Arun
+	503	Venu
+	504	Ajay
+	505	Arun
+	..	...
+Requirement1:Store & Process customer names in amazon						=> List of names(v)		
+Requirement2:Store & Process customer phone numbers in amazon				=> Set of phone numbers(v)
+Requirement3:Store & Process customer mailid & no of orders in amazon		=> Map of mailid(k) & no of orders(v)
+

@@ -1,0 +1,49 @@
+Inner Classes / Nested Classes:
+===============================
+
+class Demo
+{
+	int x;
+	static int y;
+	
+	Demo(){
+	}
+	
+	{}
+	
+	static{
+	}
+	
+	void m1(){
+	}
+	
+	static void m2(){
+	}
+	
+	class A{				#Non-Static Inner Class
+	}
+	
+	static class B{			#Static Inner Class
+	}
+	
+	void myMethod()
+	{
+			class  C{		#Local Inner Class
+			}
+	}
+}
+
+
+(+) Grouping/Maintainability of classes is easy if they are inter-related
+(+) One class private members can be accessed by it's inner class
+
+Inner Class Types:
+------------------
+1.Non-Static Inner Class
+2.Static Inner Class
+3.Local Inner Class
+4.Anonymous Inner Class
+
+Q1.Can we create object for Interface Or Abstract Class?
+Ans:
+	Yes, we can create object for Interface & Abstract Class using Anonymous Inner Class.
