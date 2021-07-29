@@ -1,0 +1,121 @@
+
+Index1:
+=======
+1.Array Vs Collection
+2.Wrapper Class
+3.Generics
+4.DataStructure
+	->Dynamic Array DataStructure
+	->Doublelinked List
+
+Index2:
+=======
+1.Collection Introduction	(java.util package => 3 interfaces & 15 implemented classes)
+2.Collection Vs Collections
+3.Collection interface 12 methods & Map interface 14 methods
+4.Iterable & Iterators
+
+
+Index3:
+=======
+1.List
+2.Set
+3.Map
+
+_________________________________________________________________________________________________
+2.Set:
+=======
+1.Definition (when to use set)
+	When user want to store group of individual objects in which
+	1.Duplication is not allowed
+	2.Order is not preserved
+	then choose Set interface & it's implemented classes.
+2.Set interface 3 		implemented classes
+	1.HashSet
+	2.LinkedHashSet
+	3.TreeSet
+3.Hierarchy of 			implemented classes
+4.Common features of 	implemented classes
+	->Allow only unique elements
+5.Specific features of	implemented classes
+
+	Factor				1.HashSet				2.LinkedHashSet				3.TreeSet
+	
+	1.DataStructure		Hashing DS				Hashing DS+Doublelinked DS	Balanced Tree DS	
+	2.Order				Random Order			FIFO						Ascending
+	3.null values		Allows(Once)			Allows(Once)				Cannot Allows (=>NPE)
+	4.homogeneous		Allows					Allows						Allows
+	5.heterogenous		Allows					Allows						Cannot Allows (=>CCE)
+	6.synch	methods		No						No							No
+	
+
+6.Object creation of 	implemented classes
+	HashSet<TYPE>   ob=new  HashSet<TYPE>();
+7.Program on each 		implemented classes
+
+
+_________________________________________________________________________________________________
+
+3.Map:
+=======
+Ex:
+		customerId		customerName
+	
+		101				Ajay			Entry 1 (key,value)
+		102				Ram				Entry 2 (key,value)
+		103				Ajay			Entry 3 (key,value)
+		104				Arun			Entry 4 (key,value)
+		
+1.Definition (when to use map)
+	When user want to store group of individual objects in key, value pair, in which
+	1.Key should be unique
+	2.value can be duplicate
+	then choose Map interface & it's implemented classes.
+2.Map interface 8		implemented classes
+	1.HashMap
+	2.LinkedHashMap
+	3.TreeMap
+	4.IdentityHashMap
+	5.WeakHashMap
+	6.Dictionary
+	7.Hashtable
+	8.Properties
+	
+3.Hierarchy of 			implemented classes
+4.Common features of 	implemented classes
+	->Allow unique keys 
+	->Values can be duplicate
+	->If user try to store duplicate key, old value is replaced by new value 
+
+5.Specific features of implemented classes
+
+1.HashMap
+	->Allow homogeneous & heterogenous
+	->Follows random order
+	->Implemented by Hashing DataStructure
+	->One null key & Multiple null values are allowed
+2.LinkedHashMap
+	->Allow homogeneous & heterogenous
+	->Follows insertion order (FIFO)
+	->Implemented by Hashing + LinkedList DataStructure
+	->One null key & Multiple null values are allowed
+3.TreeMap
+	->Allow homogeneous
+	->Follows ascending order
+	->Implemented by Balanced Tree DataStructure
+	->one null key & one null value is allowed in first occurance
+
+Entry interface methods:
+========================
+	getKey()	: returns one key
+	getValue()	: returns one value
+	
+interface  Map
+{
+	interface Entry
+	{
+	
+	}
+}
+
+Map.Entry    ob

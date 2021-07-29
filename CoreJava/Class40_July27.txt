@@ -1,0 +1,184 @@
+
+Index1:
+=======
+1.Array Vs Collection
+2.Wrapper Class
+3.Generics
+4.DataStructure
+	->Dynamic Array DataStructure
+	->Doublelinked List
+
+Index2:
+=======
+1.Collection Introduction	(java.util package => 3 interfaces & 15 implemented classes)
+2.Collection Vs Collections
+3.Collection interface 12 methods & Map interface 14 methods
+4.Iterable & Iterators
+
+
+Index3:
+=======
+1.List
+2.Set
+3.Map
+
+_________________________________________________________________________________________________
+
+
+3.Collection interface methods & Map interface methods:
+=======================================================
+
+					Collection interface methods						Map interface methods
+				
+				
+1.Insertion Related
+					add(value)											put(key,value)
+					addAll(Collection)									putAll(Map)
+2.Removal Related
+					remove(value)										remove(key)
+					removeAll(Collection)								clear()
+					retainAll(Collection)
+					clear()
+3.Searching Related
+					contains(value)										containsKey()
+					containsAll(Collection)								containsValue()
+4.Utility methods
+					isEmpty()											isEmpty()
+					size()												size()
+					equals()											equals()
+					hashCode()											hashCode()
+																		
+																		get(key)
+																		keySet()
+																		values()
+																		entrySet()
+
+_________________________________________________________________________________________________
+
+																		
+4.Iterable & Iterator interfaces:
+=================================
+
+Iterable: It is a group of objects which are formed by 
+
+1.List 
+2.Set
+3.Map
+
+Iterator:It are the (3)mechanisms used to fetch object by object from iterable/group.
+
+1.For Each loop
+	syntax:
+			for(Type  objectname: IterableName)
+			{
+				<-   object
+			}
+2.Iterator 		interface methods
+
+	1.iterator()  	: It handover iterable to iterator.
+	2.hasNext()   	: It verify object existance & returns true in forward direction
+	3.next()		: It returns current object in forward direction.
+	
+3.ListIterator 	interface methods
+
+	1.listIterator()  	: It handover iterable to iterator.
+	2.hasNext()   		: It verify object existance & returns true in forward direction
+	3.next()			: It returns current object in forward direction
+	4.hasPrevious()   	: It verify object existance & returns true in backward direction
+	5.previous()		: It returns current object in backward direction
+_________________________________________________________________________________________________
+
+1.List:
+=======
+1.Definition (when to use list)
+
+	When user want to store group of individual objects in which
+	1.Duplication is allowed
+	2.Insertion order is preserved
+	then choose List interface & it's implemented classes.
+	
+2.List interface 4 		implemented classes
+	1.ArrayList
+	2.LinkedList
+	3.Vector
+	4.Stack
+3.Hierarchy of 			implemented classes
+4.Common features of 	implemented classes
+	->Duplication is allowed
+	->Null values are allowed
+	->Can store homogeneous & heterogenous objects
+	
+5.Specific features of	implemented classes
+
+factor				1.ArrayList				2.LinkedList			3.Vector			4.Stack
+
+1.DataStructure
+
+2.Methods types
+(synch or nonsynch)
+ 
+3.Legacy class
+
+4.Better p/f		insertion				modification			insertion			insertion
+
+5.Poor p/f			modification			insertion				modification		modification
+	
+6.Order				FIFO					FIFO					FIFO				LIFO
+
+7.new methods		add(),					addFirst()				addElement()		push()
+					remove()				addLast()				removeElementAt()	pop()
+											peek()
+											poll()
+	
+6.Object creation of 	implemented classes
+
+	I.Raw type object creation
+
+	List   obj=new   ArrayList();
+	List   obj=new   LinkedList();
+	List   obj=new   Vector();
+	List   obj=new   Stack();
+	OR
+	ArrayList   	obj=new   ArrayList();
+	LinkedList   	obj=new   LinkedList();
+	Vector   		obj=new   Vector();
+	Stack	   		obj=new   Stack();
+	
+	
+	II.Generic type object creation
+	
+		ArrayList<TYPE>   	obj=new   ArrayList<TYPE>();
+		LinkedList<TYPE>   	obj=new   LinkedList<TYPE>();
+		Vector <TYPE>  		obj=new   Vector<TYPE>();
+		Stack<TYPE>	   		obj=new   Stack<TYPE>();
+		
+		Here TYPE  =  Any one of wrapper class / String class / Userdefined class
+	
+7.Program on each 		implemented classes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+_________________________________________________________________________________________________
+2.Set:
+=======
+1.Definition (when to use set)
+2.Set interface 3 		implemented classes
+3.Hierarchy of 			implemented classes
+4.Common features of 	implemented classes
+5.Specific features of	implemented classes
+6.Object creation of 	implemented classes
+7.Program on each 		implemented classes
