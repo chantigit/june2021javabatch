@@ -1,0 +1,85 @@
+Comparable interface Vs Comparator interface:
+=============================================
+Employee{id=3, name='Depak', salary=45000.0}
+Employee{id=4, name='Tarun', salary=25000.0}
+Employee{id=1, name='Depak', salary=65000.0}
+Employee{id=2, name='Arun', salary=5000.0}
+
+					
+						Comparable interface 			 	Comparator interface
+					
+						(DNSO)								(CSO)
+						
+1.PackageName			java.lang							java.util
+
+2.Used for				Comparing objects					Comparing objects
+
+3.Sorting Order			Single sorting mech					Multi sorting mech
+
+						Sort by id / name/salary			Sort by id & name & salary
+
+4.Methods 				1 method : compareTo()				2 methods : compare() & equals()
+						
+
+5.Enable sorting		Collections.sort(listName);			Collections.sort(listName,typeOfComparator);
+
+
+=========================================================================================================================
+
+FailFast & FailSafe(Non-FailFast) situation in collection:
+===========================================================
+ConcurrentHashMap
+CopyOnWriteArrayList
+CopyOnWriteArraySet
+
+JDK version features:
+=====================
+1.Variable arguments
+
+public static void main(String...  args)
+{
+
+}
+
+public static void main(String  args[])
+{
+
+}
+
+2.Changes in Interface
+
+	1.Interface consist abstract methods  (method without body)
+	2.Interface can also consist 
+			1.default methods				(method with body)
+			2.static methods				(method with body)
+	3.FunctionalInterface annotation  (Arrow Functions/Lambda Functions)
+	4.Method Reference (::)
+
+3.Enums
+
+	1.Genders
+	2.WeekDays
+	3.Months
+	4.Seasons
+	
+	syntax:
+			enum   EnumName
+			{
+				VALUE1,VALUE2,VALUE3,...
+			};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

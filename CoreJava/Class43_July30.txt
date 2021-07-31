@@ -1,0 +1,176 @@
+
+Index1:
+=======
+1.Array Vs Collection
+2.Wrapper Class
+3.Generics
+4.DataStructure
+	->Dynamic Array DataStructure
+	->Doublelinked List
+
+Index2:
+=======
+1.Collection Introduction	(java.util package => 3 interfaces & 15 implemented classes)
+2.Collection Vs Collections
+3.Collection interface 12 methods & Map interface 14 methods
+4.Iterable & Iterators
+
+
+Index3:
+=======
+1.List
+2.Set
+3.Map
+
+_________________________________________________________________________________________________
+
+3.Map:
+=======
+Ex:
+		customerId		customerName
+	
+		101				Ajay			Entry 1 (key,value)
+		102				Ram				Entry 2 (key,value)
+		103				Ajay			Entry 3 (key,value)
+		104				Arun			Entry 4 (key,value)
+		
+1.Definition (when to use map)
+	When user want to store group of individual objects in key, value pair, in which
+	1.Key should be unique
+	2.value can be duplicate
+	then choose Map interface & it's implemented classes.
+
+Entry interface methods:
+========================
+	getKey()	: returns one key
+	getValue()	: returns one value
+	
+2.Map interface 8		implemented classes
+	1.HashMap
+	2.LinkedHashMap
+	3.TreeMap
+	4.IdentityHashMap
+	5.WeakHashMap
+	6.Dictionary
+	7.Hashtable
+	8.Properties
+	
+3.Hierarchy of 			implemented classes
+4.Common features of 	implemented classes
+	->Allow unique keys 
+	->Values can be duplicate
+	->If user try to store duplicate key, old value is replaced by new value 
+
+5.Specific features of implemented classes
+
+1.HashMap
+	->Allow homogeneous & heterogenous
+	->Follows random order
+	->Implemented by Hashing DataStructure
+	->One null key & Multiple null values are allowed
+	->Methods are not synch
+2.LinkedHashMap
+	->Allow homogeneous & heterogenous
+	->Follows insertion order (FIFO)
+	->Implemented by Hashing + LinkedList DataStructure
+	->One null key & Multiple null values are allowed
+	->Methods are not synch
+3.TreeMap
+	->Allow homogeneous
+	->Follows ascending order
+	->Implemented by Balanced Tree DataStructure
+	->Cannot allow null key & multiple null value is allowed 
+	->Methods are not synch
+
+4.IdentityHashMap
+	->Same as HashMap, but allows duplicate keys
+5.WeakHashMap	
+	->Same as HashMap, but this objects gets garbage collected
+
+6.Dictionary	
+	
+		Dictionary 					Map
+		
+		Abstract Class			Interface
+		(JDK 1.0)				(JDK 1.2)
+		Key,Value				Key,Value
+		
+		2->views				5->views
+		
+		keys	- keys()		keySet(),values(),entrySet(),getKey(),getValue()
+		values	- elements()
+		
+7.Hashtable
+		It extends the Dictionary & implements the Map 
+		This methods are synch
+		Cannot allow null key & value
+		
+8.Properties
+		It extends the Hashtable
+		This methods are synch
+		
+		
+Task:
+=====
+db.properties
+
+		Key					Value
+		
+		driverClassName		oracle.jdbc.OracleDriver
+		
+		url					jdbc:oracle:thin:@localhost:1521:XE
+		
+		username			chantidb1
+		
+		password			chantipass
+		
+=================================================================================
+Comparable interface Vs Comparator interface:
+=============================================
+Employee{id=3, name='Depak', salary=45000.0}
+Employee{id=4, name='Tarun', salary=25000.0}
+Employee{id=1, name='Depak', salary=65000.0}
+Employee{id=2, name='Arun', salary=5000.0}
+
+					
+						Comparable interface 			 	Comparator interface
+					
+						(DNSO)								(CSO)
+						
+1.PackageName			java.lang							java.util
+
+2.Used for				Comparing objects					Comparing objects
+
+3.Sorting Order			Single sorting mech					Multi sorting mech
+
+						Sort by id / name/salary			Sort by id & name & salary
+
+4.Methods 				1 method : compareTo()				2 methods : compare() & equals()
+						
+
+5.Enable sorting		Collections.sort(listName);			Collections.sort(listName,typeOfComparator);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
