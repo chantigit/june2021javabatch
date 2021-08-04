@@ -1,0 +1,126 @@
+
+Data Storage in Java:
+=======================
+I.Temporary Data Storage:
+=========================
+1.Primitive DataTypes
+	byte,......
+2.Collection DataTypes
+	list,set & map
+
+II.Permanant Data Storage:
+=========================
+1.Files		(IOStreams)
+2.Databases
+------------------------------------------------------------------------------------
+Drawbacks with File system:
+===========================
+1.Metadata cannot be specified
+2.Duplication is allowed
+3.Null is allowed
+4.Huge amount of data cannot be maintained
+5.No security
+6.No recovery
+7.Retrival & modification is very complex
+8.Cannot make relationship between two files
+
+
+
+Databases:
+=========
+Databases stores the data in tabular format.
+Databases will resolve all the drawbacks with file system.
+
+Features of databases or adv of databases over files:
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+1.Metadata can be specified by using columns types
+2."unique" 		constraint cannot allow Duplication
+3."not null"	constraint cannot allow Null 
+4.Huge amount of data can be maintained in gb , tb ,pb,...
+5.Have security : authentication
+6.Have recovery : rollback,savepoint
+7.Retrival & modification is very simple by passing single query
+8."foriegn key" constraint can make relationship between two tables
+
+1.Row & Column
+2.Cell
+3.Tables						: Collection of interrelated data
+4.Database						: Collection of interrelated tables
+5.Database Server				: Collection of interrelated databases
+6.DataBase Management System	: It is a software used perform crud "operations" on database servers.
+7.SQL							: Using this language we can perform crud "operations" on database server.
+
+
+
+
+
+
+
+Q1.What is dbms ?
+Ans:
+	dbms is a software used to perfrom following operations(CRUD) on DB servers.
+	
+	1.Creating Database & Tables
+	2.Retrive tables data from databases
+	3.Update tables data with in databases
+	4.Delete tables data from databases
+	
+	
+Q2.What is SQL ?
+Ans:
+SQL is a query language used perform CRUD operations with Any Database servers.
+SQL is a collection of following language commands(14).
+
+	1.DDL commands 	(Data Definition Language)		: Drop,Rename,Create,Alter,Truncate
+	2.DML commands	(Data Manipilation Language)	: Insert,Update,Delete
+	3.DCL commands	(Data control Language)			: Grant,Revoke
+	4.TCL commands	(Tx control Language)			: Commit,Rollback,Savepoint
+	5.QL command    (Query Language)				: Select
+
+
+	DDL  =>  	Dr.Cat		
+	DML  => 	IUD		
+	DCL  => 	GR   
+	TCL  => 	SRC
+	QL   =>		S
+
+
+
+Q3.What are SQL datatypes ?
+	
+					Java		SQL
+
+	501				int   		int
+	"Ajay"			String 		char/varchar
+	78.96			float 		float
+	02-02-2002		Date		date
+	image/audio/	byte		blob
+
+Q4.What are SQL constraints ?
+
+1.not null
+	firstname		:	should not be empty / null
+						may be duplicate
+2.unique						
+	passport		:	may be empty / null
+						should not be duplicate
+3.primary key	
+	mailid			:	should not be empty / null
+						should not be duplicate
+4.check
+	percentage		:	check that value above 70
+	
+5.default	
+	branch			:	common value for rows
+	country			:	common value for rows
+	
+6.foreign key
+	
+
+
+
+
+
+
+
+

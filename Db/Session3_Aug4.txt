@@ -1,0 +1,124 @@
+create command
+insert command
+update vs alter
+delete vs drop vs truncate
+select command
+===========================
+Select Command:
+---------------
+syntax:
+		select  col1,col2,col3,..		from    <tablename>  [where/order by/group by];
+		
+Table Name 	: 	emp1
+Columns		:	id		pswd		name		city		dept		salary		mailid				secq		seca
+
+				1		apple		ajay		hyd			cse			25000		ajay11@gmail.com	
+				2		bat			sanjay		pune		ece			35000		sanjay2@gmail.com				
+				3		cat			depak		hyd			cse			45000		depak55@gmail.com				
+				4		dog			arun		hyd			ece			30000		arun77@gmail.com		
+				
+create table emp1(id int not null,pswd varchar(30) not null,name varchar(30) not null,city varchar(30) not null,dept varchar(5) not null,salary float not null,mailid varchar(30) not null,primary key(id,mailid));
+insert into emp1 values(1,'apple','ajay','hyd','cse',25000,'ajay11@gmail.com');
+insert into emp1 values(2,'bat','sanjay','pune','ece',35000,'sanjay2@gmail.com');
+insert into emp1 values(3,'cat','depak','hyd','cse',45000,'depak55@gmail.com');
+insert into emp1 values(4,'dog','arun','hyd','ece',30000,'arun77@gmail.com');
+R1:Show all empolyees names & salaries
+Q:select name,salary from emp1;
+
+R2:Show all empolyees records
+Q:select * from empolyees
+
+I.Aggrigate functions:	sum(),min(),max(),avg(),count()
+----------------------
+R3:Show sum of all empolyees salaries
+Q:
+R4:Show min salary from all empolyees salaries
+Q:
+R5:Show max salary from all empolyees salaries
+Q:
+R6:Show avg salary from all empolyees salaries
+Q:
+R7:Show no of empolyees 
+Q:
+
+PS1:Show 2nd highest salary from all empolyees salaries
+PS2:Show 2nd lowest salary from all empolyees salaries
+
+II.Relational Operators(<,>,<=,>=,!=,=)
+-------------------------
+R8:Show all empolyees records whose salary below 37000
+Q:
+R9:Show all empolyees records whose salary above 37000
+Q:
+R10:Show all empolyees records whose salary is 35000
+Q:
+R11:Show 2nd empolyee id records  		(SINGUP)
+Q: select * from emp1 where id=2;
+R12:Show all empolyees records whose salary other than 25000
+Q:
+R13:Show all empolyees records whose belongs to hyd
+Q:
+R14:Show all empolyees records whose belongs to cse dept
+Q:
+
+III.Logical Operators(and,or,not)
+---------------------------------
+
+R15:Show all empolyees records whose salaries in between 30k to 40k
+Q:
+R16:Show all empolyees records whose belongs to hyd and below 37k
+Q:
+R17:Forgot pswd 		(id,mailid,secq,seca)
+Q:
+R18:Forgot id 			(mailid,secq,seca)
+Q:
+R19:Forgot id & pswd  	(mailid,secq,seca)
+Q:
+R20:SignIn
+Q:
+
+IV.Regular expressions:
+-----------------------
+
+R21:Show all empolyees records whose name starts with 'a' letter
+Q:
+R22:Show all empolyees records whose name ends with 'y' letter
+Q:
+R23:Show all empolyees records whose name having 'j' letter
+Q:
+
+
+V.Order by clause:
+------------------
+
+R24:Show all empolyees records in ascending order based on salaries
+Q:
+R25:Show all empolyees records in descending order based on salaries
+Q:
+R26:Show all empolyees records in ascending order based on names
+Q:
+R27:Show all empolyees records in descending order based on city names
+Q:
+
+VI.Group by clause:
+------------------
+R28:Show sum of salaries for all empolyees in dept wise
+Q:
+
+
+VIEWS:
+======
+syntax:	
+	create view <viewname> as select columnlist from <tablename>;
+	
+example1:Create empview1 with id & salaries from emp1 table
+
+Query:
+	create view empview1 as select id,salary from emp1;
+
+	select * from empview1;
+	
+	drop view empview1;
+
+
+

@@ -1,0 +1,119 @@
+create query:
+	Prepare table
+
+syntax:
+	create table <tablename> 	(
+										col1name	type(size)		constraintname,
+										col2name	type(size)		constraintname,
+								);
+
+example:
+		create table emp
+		(
+			id    		int         primary key,     
+			name  		varchar(20) not null,
+			salary 		float      	not null,
+			passport varchar(20) unique,
+			age int check(age>0),
+			country varchar(20)	default 'india'
+		);
+		create table dept
+		(
+				dept_id int primary key,
+				dept_name varchar(20) not null,
+				eid int,
+				FOREIGN KEY (eid) REFERENCES emp(id)
+		);
+Verify structure:
+	desc <tablename>
+------------------------------------------------------------
+insert query:
+	Used to insert rows into table
+	
+syntax1	: Inserting specific column values
+		insert into <tablename> (col1name,col2name,...) values (value1,value2,...);
+example1:
+		insert into emp (id,name,salary,passport,age) values (1,'Ram',12000,'P1234',25);
+		insert into dept (dept_id,dept_name,eid) values (501,'dev',1);
+syntax2	: Inserting all column values
+		insert into <tablename> values (value1,value2,...);
+example2:
+		insert into emp  values (2,'Ravi',15000,'S1234',26,'india');
+		insert into emp  values (3,'Venu',26000,'R1234',21,'india');
+		insert into emp  values (4,'Ajay',35000,'H1234',20,'india');
+		insert into dept values (502,'dev',2);
+		insert into dept values (503,'qa',3);
+		insert into dept values (504,'ui',4);
+------------------------------------------------------------
+select query:
+	Reading rows from the table
+syntax:
+	select column1,column2,..  from <tablename>;
+example1:Print emp table all eid & passport 
+	select id,passport  from emp;
+example2:Print emp table all columns
+	select *  from emp;
+------------------------------------------------------------
+alter vs update:
+================
+	alter used to modify column info in the table
+	update used to modify row info in the table
+------------------------------------------------------------
+delete vs truncate vs drop:
+==========================
+	delete used to remove specific row from table & all rows from table
+	truncate used to remove all rows from table
+	drop used to remove table from database
+------------------------------------------------------------
+Ref Tab1:	student table with id,name,marks columns
+	
+create table student (id int primary key, name varchar(20) not null, marks int check(marks>0));
+
+alter table student add 	(city varchar(20) not null);
+alter table student rename 	column city to emp_city;
+alter table student modify 	column emp_city varchar(40);
+alter table student drop 	column emp_city;
+
+update syntax:
+
+	update <tablename> set col1name=newvalue,col2name=newvalue,.....  where <condition>;
+
+R1:Modify 1 emp details as name to ramu  & age to 22.
+
+	update emp set name ='ramu',age=22 where id=1;
+
+R2:Give bonus of 500 to 1 eid
+	
+	update emp set salary=salary+500 where id=1;
+
+R3:Give bonus of 1000 for all employees whose salary is below 30000
+
+	update emp set salary=salary+1000 where salary<30000;
+
+
+Ref Tab2:	account table with accno,amount columns
+
+			501		15000
+			502		60000
+			503		78000
+
+R4: deposit 5000 into 501 account
+
+	update account set amount=amount+5000 where accno=501;
+R5: withdraw 7000 from 503 account
+R6: transfer 9000 from 503 to 502 account
+	
+
+syntax of delete,truncate,drop:
+
+	delete from <tablename> [where <condition>];
+	
+	truncate 	table <tablename>;
+	
+	drop  		table <tablename>;
+	
+	
+	
+	
+
+
