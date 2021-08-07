@@ -2,6 +2,8 @@ package com.chanti.mapapps;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class ComparableDemo {
     public static void main(String[] args) {
@@ -14,7 +16,19 @@ public class ComparableDemo {
         empList.add(e2);
         empList.add(e3);
         empList.add(e4);
-        Collections.sort(empList);
-        empList.forEach(System.out::println);
+        //Create a new emp list which have above 30000 salary employees only
+        ArrayList<Employee1> above30KEmpList=new ArrayList<>();
+        empList.forEach(emp->{
+            if(emp.getSalary()>30000F)
+            {
+                above30KEmpList.add(emp);
+            }
+        });
+        above30KEmpList.forEach(System.out::println);
+        //Collections.sort(empList);
+
+        List<Employee1> above30KEmpList1= empList.stream().filter(x -> x.getSalary() > 30000F).collect(Collectors.toList());
+        above30KEmpList1.forEach(System.out::println);
+        //empList.forEach(System.out::println);
     }
 }

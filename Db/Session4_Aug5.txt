@@ -1,0 +1,74 @@
+create command
+insert command
+update vs alter
+delete vs drop vs truncate
+select command
+===========================
+
+create table cust(cid int primary key,cname varchar(10) not null);
+insert into cust values(1,'Ajay');
+insert into cust values(2,'Bhanu');
+insert into cust values(3,'Chandhu');
+
+create table cust_addr(cid int primary key,city varchar(10) not null);
+insert into cust_addr values(1,'Pune');
+insert into cust_addr values(2,'Chennai');
+insert into cust_addr values(4,'Delhi');
+
+select * from cust;
+select * from cust_addr;
+
+Def:
+	Used to join one or more table rows
+
+Types of joins:
+==============
+1.Crosss Join
+	->No condition
+	->Each row in T1 is associate with each row in T2
+__________________________________________	
+2.Inner Join:
+	->Have condition
+	->Consider only matched rows
+	2.1 Natural Join
+		->Same as inner join with 2 diff
+		->No condition
+		->Cannot allow duplicate columns
+__________________________________________
+3.Outer Join:
+	->Have condition
+	->Consider matched & unmatched rows
+   3.1  Left outer join
+   3.2  Right outer join
+   3.3  Full Outer join		(left uinon right)
+__________________________________________
+4.Equi Join 	:   Have = operator in join condtion
+5.Non-Equi Join :   Have except = operator in join condtion  (<,>,<=,>=,<>)
+6.Self Join		:   If we perform join on single table
+__________________________________________
+
+Drawbacks with SQL:
+====================
+->Cannot exucute more than 1 sql query at a time
+->Cannot supports control statements like desicion making & loops
+->SQL cannot handle the exceptions instead we get Error Code
+->Cannot supports functional programming
+->No query reusablity
+
+PL-SQL:(Procedural Language-Structural Query Language)
+======
+->Can exucute more than 1 sql query at a time
+->Can supports control statements like desicion making & loops
+->PL-Sql handle the exceptions
+->Can supports functional programming with the help of "PROCEDURES"
+->With the help of "PROCEDURES" we achieve query reusablity
+
+
+Unconvered topics in SQL & PL-SQL:
+---------------------------------
+1.Indexes
+2.Trigger
+3.Functions
+4.Sequences
+5.Normalizations
+

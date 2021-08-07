@@ -1,0 +1,42 @@
+1.Comparable interface Vs Comparator interface
+2.FailFast & FailSafe(Non-FailFast) situation in collection/Concurrency collections
+3.Variable arguments
+4.Interface default methods,static methods
+5.@FunctionalInterface annotation  (Arrow Functions/Lambda Functions)
+6.Method Reference (::)
+7.Enums
+8.forEach() method
+9.Annotations in Java	(Core+Adv+Frameworks+RestApi)
+10.Consumer,Predicate,Supplier Functional Interfaces
+11.Optional class 8 methods
+12.Stream API
+	filter()
+	map()
+	reduce()
+
+==================================================================
+Core Java:
+----------
+	@Override
+	@SuppressWarning
+	@FunctionalInterface
+
+	@interface	MyAnnotation
+	{
+		int 	x()		default		10;
+		String 	y()		default		"APple";
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
