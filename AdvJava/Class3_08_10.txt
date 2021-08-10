@@ -1,0 +1,99 @@
+API:(Application Program Interface)
+====
+Def:	
+	Collection of readymade classes + interfaces which is meant for a specific purpose.
+
+Core Java API:
+=============
+	IO Streams API			=>	java.io 					package
+	Collection API			=>	java.util 					package
+	Reflections API			=>	java.lang,java.lang.reflect	
+	Date & Time API			=>	java.date, java.text,...
+	...
+		
+IO Streams API			
+	1.File			: mkdir(),mkdirs(),createNewFile(),...
+	2.FileWriter
+	....
+
+Adv Java:
+========						packages										Purpose
+
+	1.Jdbc 		API				java.sql,			javax.sql					Connecting Java App with any DB server + Perform CRUD operation
+	2.Servlet 	API				javax.servlet, 		javax.servlet.http			To develop dynamic web pages
+	3.Jsp 		API				javax.servlet.jsp, 	java.servlet.jsp.tagext		To develop dynamic web pages
+----------------------------------------------------------------------------------------------------------
+Note:
+
+	Any method in java has 3 possible return types
+	
+   1.void                					:  Non-Factory methods
+   2.primitive           					:  Non-Factory methods
+   3.class/interface/abstract class  		:  Factory methods
+   
+JDBC API   Vs    ODBC API:
+==========================
+
+			JDBC							ODBC
+		
+	Java database connectivity			Open database connectivity
+	
+	released in 1997 with Jdk			Before 1997 they used 
+	
+	Given by Sun Micro System			Given by MicroSoft
+	
+	Developed in Java langauge			Developed in C langauge
+	
+	It is database indepedent API		It is database indepedent API
+	
+	Java App + Odbc Api   				Java App + Odbc Api   
+	
+		=>  Application becomes platform depededent										
+
+
+Common 6 steps for every JDBC Application:
+=========================================
+
+1.Connecting Java App with any DB server 
+
+Step1:Load the driver class	
+		Class.forName("com.mysql.cj.jdbc.Driver");
+        System.out.println("MySQL Driver loaded successfully");
+Step2:Establish the connection between JAva App with DB server
+		Connection dbCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/sevenamdb1", "root", "root");
+        System.out.println("Connection between Java App & DB was established ");
+		
+2.Perform CRUD operations
+
+Step3:Get the Statement object	
+		 Statement myStatement = dbCon.createStatement();
+Step4.1:Prepare your SQL query
+			
+Step4.2:Call respective method based on 4.1		 
+		 1.int			executeUpdate(myQuery)		: Used to execute Non-Select(C/I/U/D) command
+		 2.ResultSet	executeQuery(myQuery)		: Used to execute Select command
+		 3.boolean		execute(myQuery)			: Used to execute Select/Non-Select command
+		 4.int[]		executeBatch()				: Used to execute Multiple SQL queries
+Step5:		 
+		Hold the result in a variable which come from DB & print on console
+Step6:
+		Close connection object & statement object
+		
+		
+		
+
+App1:WAJA to create employee table with id,name,salary columns
+
+
+
+
+
+
+
+
+
+
+
+
+
+

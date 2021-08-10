@@ -1,0 +1,31 @@
+API:(Application Program Interface)
+====
+Def:	
+	Collection of readymade classes + interfaces which is meant for a specific purpose.
+
+Core Java API:
+=============
+	IO Streams API			=>	java.io 					package
+	Collection API			=>	java.util 					package
+	Reflections API			=>	java.lang,java.lang.reflect	
+	Date & Time API			=>	java.date, java.text,...
+	...
+		
+IO Streams API			
+	1.File			: mkdir(),mkdirs(),createNewFile(),...
+	2.FileWriter
+	....
+
+Adv Java:
+========						packages										Purpose
+
+	1.Jdbc 		API				java.sql,			javax.sql					Connecting Java App with any DB server + Perform CRUD operation
+	2.Servlet 	API				javax.servlet, 		javax.servlet.http			To develop dynamic web pages
+	3.Jsp 		API				javax.servlet.jsp, 	java.servlet.jsp.tagext		To develop dynamic web pages
+----------------------------------------------------------------------------------------------------------	
+
+							
+							
+							
+							
+						
