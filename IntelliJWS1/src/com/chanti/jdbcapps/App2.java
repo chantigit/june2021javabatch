@@ -1,8 +1,12 @@
 package com.chanti.jdbcapps;
+
 import com.chanti.mysqldbcon.DbCon;
+
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.Statement;
-public class App1 {
+
+public class App2 {
 
     static Connection dbCon =null;
 
@@ -19,16 +23,15 @@ public class App1 {
         catch (Exception e)        {            e.printStackTrace();        }
         return temp;
     }
-    public static int saveEmployeeRecord(){
+    public static int saveEmployeeRecord(Employee employee){
         int res=0;
         try{
             dbCon=DbCon.getDbCon();
-            Statement myStatement = dbCon.createStatement();
-            int id=603;
-            String name="Ram";
-            float salary=25000;
-            String myQuery ="insert into employee values("+id+",'"+name+"',"+salary+")";
-            res=myStatement.executeUpdate(myQuery);
+            PreparedStatement myStatement = dbCon.prepareStatement("insert into employee values(?,?,?)");
+            myStatement.setInt(1,employee.getId());
+            myStatement.setString(2,employee.getName());
+            myStatement.setFloat(3,employee.getSalary());
+            res=myStatement.executeUpdate();
             dbCon.close();
             myStatement.close();
         }
@@ -64,7 +67,8 @@ public class App1 {
 
     public static void main(String[] args)  {
         //System.out.println(App1.createEmployeeTable()==0?"Table is created":"Error while creating table");
-        int insertQueryResult=App1.saveEmployeeRecord();
+        Employee employee1=new Employee(605,"Sanjay",80000);
+        int insertQueryResult= App2.saveEmployeeRecord(employee1);
         System.out.println(insertQueryResult==1?insertQueryResult+" Record is saved": "Error while saving record");
         //int updateQueryResult = App1.updateEmployeeRecord();
         //System.out.println(updateQueryResult==1?updateQueryResult+" Record is updated": "Error while updating record");

@@ -1,0 +1,62 @@
+Common 6 steps for every JDBC Application:
+=========================================
+
+1.Connecting Java App with any DB server 
+
+Step1:Load the driver class	
+		Class.forName("com.mysql.cj.jdbc.Driver");
+        System.out.println("MySQL Driver loaded successfully");
+Step2:Establish the connection between JAva App with DB server
+		Connection dbCon = DriverManager.getConnection("jdbc:mysql://localhost:3306/sevenamdb1", "root", "root");
+        System.out.println("Connection between Java App & DB was established ");
+		
+2.Perform CRUD operations
+
+Step3:Get the Statement object	
+		 Statement myStatement = dbCon.createStatement();
+Step4.1:Prepare your SQL query
+			
+Step4.2:Call respective method based on 4.1		 
+		 1.int			executeUpdate(myQuery)		: Used to execute Non-Select(C/I/U/D) command
+		 2.ResultSet	executeQuery(myQuery)		: Used to execute Select command
+		 3.boolean		execute(myQuery)			: Used to execute Select/Non-Select command
+		 4.int[]		executeBatch()				: Used to execute Multiple SQL queries
+Step5:		 
+		Hold the result in a variable which come from DB & print on console
+Step6:
+		Close connection object & statement object
+		
+		
+		
+
+App1:WAJA to create employee table with id,name,salary columns
+		create table employee1(id int primary key,name varchar(30) not null,salary float not null)
+		
+App2:WAJA to insert 1 row into employee table
+		insert into employee values(601,'Ajay',45000.50F)
+App3:WAJA to update 1 row within employee table
+		update employee set name='Vinay',salary=55000 where id=601
+App4:WAJA to delete 1 row from employee table
+		delete from employee where id=601
+		
+		
+Customer
+	id
+	pswd
+	name
+	phone
+	city
+
+
+
+
+
+
+
+
+
+
+
+
+
+
