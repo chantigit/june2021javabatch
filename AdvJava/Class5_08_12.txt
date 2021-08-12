@@ -1,0 +1,32 @@
+
+App1:WAJA to create employee table with id,name,salary columns
+		create table employee1(id int primary key,name varchar(30) not null,salary float not null)
+		
+App2:WAJA to insert 1 row into employee table
+		insert into employee values(601,'Ajay',45000.50F)
+App3:WAJA to update 1 row within employee table
+		update employee set name='Vinay',salary=55000 where id=601
+App4:WAJA to delete 1 row from employee table
+		delete from employee where id=601
+		
+		
+Customer
+	id
+	pswd
+	name
+	phone
+	city
+
+
+
+
+
+
+
+
+
+
+
+
+
+
