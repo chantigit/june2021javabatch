@@ -2,10 +2,8 @@ package com.chanti.jdbcapps;
 
 import com.chanti.mysqldbcon.DbCon;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 
 public class EmployeeDao {
     static Connection dbCon =null;
@@ -70,15 +68,26 @@ public class EmployeeDao {
             dbCon=DbCon.getDbCon();
             PreparedStatement pst=dbCon.prepareStatement("select * from employee");
             ResultSet resultSet = pst.executeQuery();
-            while(resultSet.next())
+            ResultSetMetaData metaData = resultSet.getMetaData();
+            ArrayList<Employee> employees=new ArrayList<>();
+            //Printing MetaData
+            int columnCount = metaData.getColumnCount();
+            for(int i=1;i<=columnCount;i++)
             {
-                for(int i=1;i<=3;i++)
-                {
-                    System.out.print(resultSet.getString(i)+"\t");
-                }
-                System.out.println();
+                System.out.print(metaData.getColumnName(i)+"\t");
             }
-
+            System.out.println("\n-------------------------------------------\n");
+            //Printing Data
+            while(resultSet.next()) {
+                Employee employee=new Employee();
+                employee.setId(resultSet.getInt(1));
+                employee.setName(resultSet.getString(2));
+                employee.setSalary(resultSet.getFloat(3));
+                employees.add(employee);
+            }
+            employees.forEach(e->{
+                System.out.println(e);
+            });
             /*
 
             System.out.println(resultSet.next());//Moving cursor to before 1st row
@@ -121,5 +130,40 @@ public class EmployeeDao {
             */
         }
         catch (Exception e){ e.printStackTrace();}
+
     }
+    public static void loadEmployeeById(int eid) {
+        try {
+            dbCon = DbCon.getDbCon();
+            PreparedStatement pst = dbCon.prepareStatement("select * from employee where id=?");
+            pst.setInt(1,eid);
+            ResultSet resultSet = pst.executeQuery();
+            if(resultSet.next()) {
+                for (int i = 1; i <= 3; i++) {
+                    System.out.print(resultSet.getString(i) + "\t");
+                }
+                System.out.println();
+            }
+            else{
+                System.out.println(eid+" is not exist in DB");
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    public static boolean isEmployeeExist(int eid) {
+        boolean res=false;
+        try {
+            dbCon = DbCon.getDbCon();
+            PreparedStatement pst = dbCon.prepareStatement("select * from employee where id=?");
+            pst.setInt(1,eid);
+            ResultSet resultSet = pst.executeQuery();
+            res=resultSet.next();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+
 }
