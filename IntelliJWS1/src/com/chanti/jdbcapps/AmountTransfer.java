@@ -4,44 +4,48 @@ import com.chanti.mysqldbcon.DbCon;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
 
 public class AmountTransfer {
     static Connection dbCon =null;
-    //method1
-    public static int deposit(int toAccount,float amount){
-        int res=0;
+    public static void transfer(int fromAccount,int toAccount,float amount) throws SQLException {
+        int res1=0,res2=0;
         try {
             dbCon= DbCon.getDbCon();
-            PreparedStatement pst=dbCon.prepareStatement("update account set amount=amount+? where accno=?");
-            pst.setFloat(1,amount);
-            pst.setInt(2,toAccount);
-            res=pst.executeUpdate();
+            PreparedStatement pst1=dbCon.prepareStatement("update account set amount=amount+? where accno=?");
+            pst1.setFloat(1,amount);
+            pst1.setInt(2,toAccount);
+            PreparedStatement pst2=dbCon.prepareStatement("update account set amount=amount-? where accno=?");
+            pst2.setFloat(1,amount);
+            pst2.setInt(2,fromAccount);
+            dbCon.setAutoCommit(false);
+            res1=pst1.executeUpdate();
+            res2=pst2.executeUpdate();
+            if(res1==1 && res2==1)
+            {
+                System.out.println("Tx done successfully");
+                dbCon.commit();
+            }
+            else {
+                System.out.println("Tx failed for some reason");
+                dbCon.rollback();
+            }
+            pst1.close();
+            pst2.close();
         }
-        catch (Exception e){ e.printStackTrace();}
-        return res;
-    }
-    //method2
-    public static int withdraw(int fromAccount,float amount){
-        int res=0;
-        try {
-            dbCon= DbCon.getDbCon();
-            PreparedStatement pst=dbCon.prepareStatement("update account set amount=amount-? where accno=?");
-            pst.setFloat(1,amount);
-            pst.setInt(2,fromAccount);
-            res=pst.executeUpdate();
+        catch (Exception e){
+            System.out.println("Tx failed for some reason");
+            dbCon.rollback();
+            e.printStackTrace();
         }
-        catch (Exception e){ e.printStackTrace();}
-        return res;
-    }
-    //method3
-    public static void transfer(int fromAccount,int toAccount,float amount)
-    {
-        withdraw(fromAccount,amount);
-        deposit(toAccount,amount);
-        System.out.println("Tx Done");
+        finally {
+            System.out.println("Db Con was closed");
+            dbCon.close();
+        }
     }
 
-    public static void main(String[] args) {
-        transfer(10103,10104,15000);
+    public static void main(String[] args) throws SQLException {
+
+        transfer(10103,10101,15000);
     }
 }

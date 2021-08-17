@@ -63,13 +63,14 @@ public class EmployeeDao {
         return res;
     }
     //Prepare dao method which will display all employee records
-    public static void loadAllEmployees(){
+    public static ArrayList<Employee> loadAllEmployees(){
+        ArrayList<Employee> employees=new ArrayList<>();
         try{
             dbCon=DbCon.getDbCon();
             PreparedStatement pst=dbCon.prepareStatement("select * from employee");
             ResultSet resultSet = pst.executeQuery();
             ResultSetMetaData metaData = resultSet.getMetaData();
-            ArrayList<Employee> employees=new ArrayList<>();
+
             //Printing MetaData
             int columnCount = metaData.getColumnCount();
             for(int i=1;i<=columnCount;i++)
@@ -130,26 +131,31 @@ public class EmployeeDao {
             */
         }
         catch (Exception e){ e.printStackTrace();}
-
+        return employees;
     }
-    public static void loadEmployeeById(int eid) {
+    public static Employee loadEmployeeById(int eid) {
+        Employee employee=new Employee();
         try {
             dbCon = DbCon.getDbCon();
             PreparedStatement pst = dbCon.prepareStatement("select * from employee where id=?");
             pst.setInt(1,eid);
             ResultSet resultSet = pst.executeQuery();
-            if(resultSet.next()) {
-                for (int i = 1; i <= 3; i++) {
-                    System.out.print(resultSet.getString(i) + "\t");
-                }
-                System.out.println();
+            if(resultSet.next())
+            {
+                employee.setId(resultSet.getInt(1));
+                employee.setName(resultSet.getString(2));
+                employee.setSalary(resultSet.getFloat(3));
             }
-            else{
-                System.out.println(eid+" is not exist in DB");
+            else
+            {
+                return new Employee();
             }
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }
+        return employee;
     }
     public static boolean isEmployeeExist(int eid) {
         boolean res=false;

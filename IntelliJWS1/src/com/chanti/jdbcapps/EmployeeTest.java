@@ -21,14 +21,21 @@ public class EmployeeTest {
         //System.out.println(updateQueryResult==1?updateQueryResult+" Record is updated": "Error while updating record");
         //int deleteQueryResult = EmployeeDao.deleteEmployeeRecord();
         //System.out.println(deleteQueryResult==1?deleteQueryResult+" Record is deleted": "Error while deleting record");
-        EmployeeDao.loadAllEmployees();
+        EmployeeDao.loadAllEmployees().forEach(x->
+                System.out.println(x));
         //EmployeeDao.loadEmployeeById(609);
 
         //login
         //System.out.println("---LOGIN OPERATION----");
         //Enter cust id , pswd
         //Call login method & deliver appropriate msg
-
-
+        Employee emp = EmployeeDao.loadEmployeeById(501);
+        if(emp!=null)
+        {
+            System.out.println(emp);
+        }
+        else{
+            System.out.println("id is not exist");
+        }
     }
 }
