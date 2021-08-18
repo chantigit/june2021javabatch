@@ -1,0 +1,94 @@
+FrontEnd Technologies:
+======================
+1.Html
+2.Css
+3.Js (core+adv)
+4.jQuery
+5.Bootstrap
+6.Ajax
+7.Typescript
+8.AngularJs  	(written in js)
+9.Angular     	(written in ts)
+-----------------------------------------------------
+Application Types:
+------------------
+	1.Standalone Application
+		Ex:
+			VLC,MS-Office,...
+	2.Web applications
+		1.B2C	(Enterprise Application)
+				These applications provide services to Customers
+		2.B2B	(Distributed Application)
+				These applications provide services to another B2C applications
+
+
+A web application (or web app) is application software that runs on a web server, 
+unlike computer-based software programs that are run locally on the operating system (OS) of the device. 
+Web applications are accessed by the user through a web browser with an active network connection.
+
+Ex:
+					Address/URL/Website Address
+
+Gmail				https://mail.google.com
+Facebook			https://www.facebook.com/ 
+YouTube				https://www.youtube.com/
+Amazon				https://www.amazon.in/
+
+Instagram			https://www.instagram.com/
+Twitter				https://twitter.com/?lang=en
+Naukri				https://www.naukri.com/
+Aadhar Portal		https://uidai.gov.in
+Passport Seva		https://www.passportindia.gov.in/
+
+
+
+Website:
+========
+A website is a collection of web pages
+
+Ex:
+	https://www.passportindia.gov.in/		Website
+	
+	home page, reg page, login page, about us page, contactus page,...
+	
+Types of web pages:
+
+	1.Static Webpage
+			This page response same common for every request
+	2.Dynamic Webpage
+			This page response varies from request to request
+			
+
+HTML :		HyperText Markup Language
+			Used to develop static web pages  (B&W)
+
+			static web page consist
+					1.Text  (Plain Text & Hyper Text)
+					2.Images
+					3.Tables
+					4.Forms  & items (textfield,radiobutton,dropdown box,..)
+					5.Video
+					6.Audio....
+					
+CSS  :  	Casceding Stylesheet
+			Used to applying styles(bgcolor,fgcolor,margin,padding,border,..) to Html Pages
+			Css code is always used inside HTML
+			
+JS	:		Javascript
+			Used to perform client side/form validation.
+			Js code is always used inside HTML.
+			
+jQuery :    It is JS library
+			Less code compare to Js
+			Animations & Affects
+
+Bootstrap :  It is Css,JS,jQuery library
+			Used to develop responsive web pages
+
+Ajax:		:	Asynch JS API for XML
+				Ajax is used to send a piece of info to server at background & get resposne from server
+
+
+AngularJs + Angular:
+
+			Used to develop single page applications
