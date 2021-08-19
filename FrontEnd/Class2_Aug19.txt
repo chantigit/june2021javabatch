@@ -1,0 +1,82 @@
+1.What is HyperText ?
+2.What is MarkUp ?
+
+Preparing data between tags is called as MarkUp.
+
+Ex1:
+		<b>   	Text		</b>
+		<i>		Text		</i>
+		<p>		Text		</p>
+		
+3.How many types of tags are there in html ?
+
+	1.Paired tags			:	These tags has open & closed syntax
+				Ex:			<p>		Text		</p>	
+							<b>   	Text		</b>
+	2.Unpaired tags			:	These tags has open syntax
+				Ex:			<br>,<hr>,<input>,....
+	3.Self closing tags		: Similar to Paired tags bute can be closed at end og open tag.
+				Ex:			<img />			
+				
+4.What are software requirements todo html program ?
+							Writing Code							Compile + Run
+							
+		C language		:	Editors (NP,NP++,SublimeText,..)		TurboC
+		Java language	:	Editors (NP,NP++,SublimeText,..)		Jdk
+							IDE  (Eclipse,Intellij,..)				IDE  (Eclipse,Intellij,..)
+
+		Html			:	Editors (NP,NP++,SublimeText,..)			Web browser (GC/FF/IE/..)
+							IDE  (DreamViewer,VSC,Eclipse,Intellij,..)	Web browser (GC/FF/IE/..)
+
+5.What is HTML programming Structure ?
+
+1.Root Tag:		<html>
+2.Child tags:
+		1.head		:Used to prepare
+						1.title of web page					<title>
+						2.Use external css pages			<link>
+						3.Use external js pages				<script>
+						4.Prepare metadata of current page	<meta>
+		2.body		:Used to prepare CONTENT (text/image/video/table/...)
+						which will be displayed on browser.
+					
+
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	</head>
+	<body>
+
+
+	</body>
+</html>
+
+
+Note:	Filename extension	:	.html  or   .htm
+
+
+1.How to change body foreground & background with colors & images?
+
+2.Tags in HTML
+
+	Text related Tags:
+	==================
+	1.Heading related tags		:	h1,h2,...h6
+	2.Font related tags			:	font,i,em,b,strong,s,u,
+	3.Other tags				:	p,center,sup,sub,marquee,small,big,br,hr,header,footer
+	4.List tags					:	Ordered List
+									UnOrdered List
+									Definition List
+	
+
+
+
+
+
+
+
+
+
+
+						
