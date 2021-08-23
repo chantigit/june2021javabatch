@@ -1,0 +1,46 @@
+List tags:
+==========					tags
+
+	1.Ordered List			ol,li
+	2.UnOrdered List		ul,li
+	3.Definition List		dl,dh,dd
+	
+Working with images:
+====================
+
+Tag Name	:		<img>
+Tag Type	:		Unpaired
+syntax:
+		<img	src="SourceOfImage"
+				alt="AlternateText"
+				height="px"
+				width="px"
+				title="DescriptionOfImage"
+		>
+
+Working with links:
+====================
+
+Tag Name	:		<a>
+Tag Type	:		Paired
+syntax:
+
+		<a	href="URL/ADDRESS">
+				
+					Link as Text    or Link as image
+		
+		</a>
+
+Working with Tables:
+====================
+
+
+
+
+
+
+
+
+
+
+						

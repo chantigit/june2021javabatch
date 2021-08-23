@@ -1,0 +1,46 @@
+
+Working with Html forms & it's items:
+=====================================
+
+1.<form> tag:
+
+	syntax:
+			<form 	name="NameOfForm"  	action="URL_PAGE"	method="get/post">
+			
+					Here deisgn form items
+			
+			</form>
+		
+2.Designing Labels:	(Used to perform Labeling)
+
+	syntax:
+			<label>	Label Text	</label>
+
+3.Designing Input Items:
+
+	To design 9 input items we used "<input>" tag.
+
+
+	ItemType				Tag to design
+	========				==============
+1. 	Text Field				<input	type="text">
+2.	Email TextField			<input	type="email">
+3.	Password TextField		<input	type="password">
+4.	Date picker				<input	type="date">
+5.	Number field			<input	type="number">
+6.	Search box				<input	type="search">
+7.	Check box				<input	type="checkbox">
+8.	Radio buttons			<input	type="radio">
+a.	Text Area				<textarea>
+b.	Dropdown box 			<select> & <option>
+9.	Buttons			
+		1.submit button		<input	type="submit" 	value="TextOnButton">
+		2.image button		<input	type="image" 	src="" height="" width="">
+		
+		3.reset button		<input	type="reset">
+		4.empty button 		<input	type="button">
+		
+	
+
+
+			
