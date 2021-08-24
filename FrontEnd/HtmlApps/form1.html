@@ -2,43 +2,43 @@
 <html>
     <head></head>
     <body>
-<form action="">
+<form name="myForm" action="www.chanti.com/register" method="GET">
     
     <p>
-        Text Field			    <input	type="text">
+        Text Field			    <input	type="text"     id="id1"   name="n1" required>
     </p>
     <p>
-        Email TextField			<input	type="email">
+        Email TextField			<input	type="email"    id="id2"   name="n2" value="ABC@gmail.com" readonly>
     </p>
     <p>
-        Password TextField		<input	type="password">
+        Password TextField		<input	type="password" id="id3"   name="n3" placeholder="Atleast 6 characters">
     </p>
     <p>
-        Date picker				<input	type="date">
+        Date picker				<input	type="date"     id="id4"   name="n4">
     </p>
     <p>
-        Number field			<input	type="number">
+        Number field			<input	type="number" id="id5"   name="n5">
     </p>
     <p>
-        Search box				<input	type="search">
+        Search box				<input	type="search" id="id6"   name="n6">
     </p>
     <p>
-        Check box				<input	type="checkbox" value="Telugu">Telugu
-                                <input	type="checkbox" value="Hindhi">Hindi
-                                <input	type="checkbox" value="English">English
+        Check box				<input	type="checkbox" value="Telugu" id="id7"   name="n7">Telugu
+                                <input	type="checkbox" value="Hindhi"  id="id7"   name="n7">Hindi
+                                <input	type="checkbox" value="English"  id="id7"   name="n7">English
     </p>
     <p>
-        Radio buttons			<input	type="radio" value="AC">AC
-                                <input	type="radio" value="Non-AC">Non-AC
+        Radio buttons			<input	type="radio" value="AC"  id="id8"   name="n8">AC
+                                <input	type="radio" value="Non-AC"   id="id8"   name="n8">Non-AC
     </p>
     
     <p>
-        Text Area				<textarea rows="5" cols="5">
+        Text Area				<textarea rows="5" cols="5"   id="id9"   name="n9">
 
                                 </textarea>
     </p>
     <p>
-        Dropdown box 			<select> 
+        Dropdown box 			<select   id="id10"   name="n10"> 
                                          <option value="Select A Day "> Select A Day </option>
                                          <option value="sunday"> Sunday </option>
                                          <option value="monday"> Monday </option>
@@ -46,12 +46,15 @@
                                 </select>
     </p>
     <p>
+        File Chooser:  <input 	type="file">
+    </p>
+    <p>
         Buttons			<br>
-            1.submit button		<input	type="submit" 	value="TextOnButton">  <hr>
-            2.image button		<input	type="image" 	src="" height="" width=""><hr>
+            1.submit button		<input	type="submit" 	value="Register">  <hr>
+            2.image button		<input	type="image" 	src="one.jpg" height="20px" width="50px"><hr>
             
             3.reset button		<input	type="reset"><hr>
-            4.empty button 		<input	type="button">
+            4.empty button 		<input	type="button" value="EMPTY">
     </p>
 
 </form>

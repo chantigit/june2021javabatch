@@ -1,0 +1,120 @@
+
+Working with Html forms & it's items:
+=====================================
+
+1.<form> tag:
+
+	syntax:
+			<form 	name="NameOfForm"  	action="URL_PAGE"	method="get/post">
+			
+					Here deisgn form items
+			
+			</form>
+		
+2.Designing Labels:	(Used to perform Labeling)
+
+	syntax:
+			<label>	Label Text	</label>
+
+3.Designing Input Items:
+
+	To design 9 input items we used "<input>" tag.
+
+
+	ItemType				Tag to design
+	========				==============
+1. 	Text Field				<input	type="text">
+2.	Email TextField			<input	type="email">
+3.	Password TextField		<input	type="password">
+4.	Date picker				<input	type="date">
+5.	Number field			<input	type="number">
+6.	Search box				<input	type="search">
+7.	Check box				<input	type="checkbox"	value="Value1">Value1
+8.	Radio buttons			<input	type="radio" 	value="Value1">Value1
+a.	Text Area				<textarea rows="" cols=""> </textarea>
+b.	Dropdown box 			<select> 
+								<option value="Value1">Value1 </option>
+							</select>
+9.	Buttons			
+		1.submit button		<input	type="submit" 	value="TextOnButton">
+		2.image button		<input	type="image" 	src="" height="" width="">
+		
+		3.reset button		<input	type="reset">
+		4.empty button 		<input	type="button">
+10.File chooser				<input 	type="file">
+		
+Form items attributes:
+=====================
+1.id
+2.name
+3.readonly
+4.required
+5.placeholder	
+
+
+==========================================================================================================
+
+CSS:	(Casceding Style Sheet)
+===
+
+Html  -> Used to design static web pages 
+Css   -> USed to applying styles(fgcolor,bgcolor,margin,padding,border,fontsize...) to html pages
+
+Syntax:
+		<tagname style="property1:value;property2:value;.......">
+					Inner Html
+		</tagname>
+		
+Example:
+		<h1 style="color: aqua;background-color: brown;text-align: center;">
+            Good morning
+        </h1>
+	
+
+Types of CSS:
+=============
+Css styles can be used by Html tags in 3 ways.
+
+1.Inline 	Css
+2.Internal 	CSS
+3.External 	Css
+
+
+1.Inline 	Css:
+---------------
+Here styles are declared with in html open tag by using "style" attribute.
+
+Syntax:
+		<tagname style="property1:value;property2:value;.......">
+					Inner Html
+		</tagname>
+		
+Example:
+
+
+Drawbacks:
+	1.No styles reusability
+	
+2.Internal 	CSS:
+----------------
+Here styles are declared with in <head> tag  inside <style> tag.
+
+Syntax:
+		<head>
+				<style>
+						tag1name
+						{
+							property1:value;
+							property2:value;
+							...
+						}
+						tag2name
+						{
+							property1:value;
+							property2:value;
+							...
+						}
+				</style>
+		</head>
+		
+Example:
