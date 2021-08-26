@@ -1,0 +1,155 @@
+==========================================================================================================
+
+CSS:	(Casceding Style Sheet)
+===
+
+Html  -> Used to design static web pages 
+Css   -> USed to applying styles(fgcolor,bgcolor,margin,padding,border,fontsize...) to html pages
+
+Syntax:
+		<tagname style="property1:value;property2:value;.......">
+					Inner Html
+		</tagname>
+		
+Example:
+		<h1 style="color: aqua;background-color: brown;text-align: center;">
+            Good morning
+        </h1>
+	
+
+Types of CSS:
+=============
+Css styles can be used by Html tags in 3 ways.
+
+1.Inline 	Css
+2.Internal 	CSS
+3.External 	Css
+
+
+1.Inline 	Css:
+---------------
+Here styles are declared with in html open tag by using "style" attribute.
+
+Syntax:
+		<tagname style="property1:value;property2:value;.......">
+					Inner Html
+		</tagname>
+		
+Example:
+
+
+Drawbacks:
+	1.No styles reusability
+	
+2.Internal 	CSS:
+----------------
+Here styles are declared with in <head> tag  inside <style> tag.
+
+Syntax:
+		<head>
+				<style>
+						tag1name
+						{
+							property1:value;
+							property2:value;
+							...
+						}
+						tag2name
+						{
+							property1:value;
+							property2:value;
+							...
+						}
+				</style>
+		</head>
+		
+Example:
+
+Drawbacks:
+	Mixing of Css styles & Html code  will become complex
+
+3.External 	CSS:
+----------------
+Here styles are declared in a separate page having .css extension & it is used to html page using <link> tag.
+
+syntax of link tag:
+
+	<link  href="externalcssfilename.css"		rel="stylesheet">
+	
+	
+Css Selector Types:
+===================
+1.Tag Selector
+2.Id Selector
+3.Class Selector
+4.Universal Selector
+
+
+
+1.Tag Selector:
+	Here styles are defined to html tags & applied to all respective html tags.
+	
+syntax:
+		htmltagname
+		{
+			property1:value;
+			property2:value;
+			...
+		}
+example:
+		p
+		{
+			color: white;
+			background-color:aqua;
+		}
+
+2.Id Selector (#):
+	Here styles are defined to id's & applied to respective id tag.
+	
+syntax:
+		#idname1
+		{
+			property1:value;
+			property2:value;
+			...
+		}
+example:
+		#id1
+		{
+			color: white;
+			background-color:aqua;
+		}
+3.Class Selector (.):
+	Here styles are defined to class's & applied to respective all class attribute tags.
+	
+syntax:
+		.classname1
+		{
+			property1:value;
+			property2:value;
+			...
+		}
+example:
+		.c1
+		{
+			color: white;
+			background-color:aqua;
+		}
+4.Universal Selector (*):
+	Here styles are defined & applied to all html tags.
+	
+syntax:
+		*
+		{
+			property1:value;
+			property2:value;
+			...
+		}
+example:
+		*
+		{
+			color: white;
+			background-color:aqua;
+		}
+		
+

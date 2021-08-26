@@ -1,0 +1,29 @@
+JS used in :
+===========
+	jQuery
+	Bootstrap
+	Ajax
+	AngularJs
+	Typescript
+	Angular
+	NodeJs
+	ExpressJs
+	ReactJs
+	VueJs
+	....
+	
+Java Full Stack:		BackEnd-Java   FrontEnd-UI (html,css,js,jQuery,Bootstrap,Ajax,Angular/ReactJs)
+Python Full Stack:		BackEnd-Python   FrontEnd-UI (html,css,js,jQuery,Bootstrap,Ajax,Angular/ReactJs)
+
+UI Developer	:	FrontEnd-UI (html,css,js,jQuery,Bootstrap,Ajax,Angular/ReactJs)
+								     JS
+UI Full Stack  	:	BackEnd:NodeJs,ExpressJs,MongoDb	FrontEnd-UI (html,css,js,jQuery,Bootstrap,Ajax,Angular/ReactJs)
+
+		MEAN Stack
+		MERN Stack
+------------------------------------------------------------------------------------------------------------
+1.Output functions in Js:
+			alert('Hi1')
+            confirm('Hi2')
+            document.write('Hi3')
+            console.log('Hi4')

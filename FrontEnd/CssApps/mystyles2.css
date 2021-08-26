@@ -1,0 +1,30 @@
+p
+{
+    color: white;
+    background-color:aqua;
+}
+#id1
+{
+    text-align: center;
+    color: white;
+    background-color: blueviolet;
+}
+#id2
+{
+    text-align: center;
+    color: white;
+    background-color: blue;
+}
+.c1{
+    color: chocolate;
+}
+.c2{
+    color: skyblue;
+}
+*
+{
+    font-family: Chiller;
+    border:2px solid red;
+    margin:5x;
+    padding:5px;
+}
