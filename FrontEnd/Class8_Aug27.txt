@@ -1,0 +1,187 @@
+C language  /  Java language / Python language / C#.Net language / JS language:
+===============================================================================
+1.Keywords
+2.Identifier
+3.Literals
+4.Variable
+5.Constant
+6.Input & Output operations
+7.Datatypes
+8.Operators
+9.Control Statements
+10.Functions
+
+
+JS language:
+===========
+1.Keywords:
+	Keywords are reserved words & their meaing already defined by compiler.
+	Each keyword used in particular purpose.
+	Ex:
+		if,for,else,while,do,switch,var,let,const,break,continue,function,....
+__________________________________________________________________________		
+2.Identifier
+3.Literals
+4.Variable
+5.Constant
+
+In C language :
+		Declare a product price (variable)	:			int		productPrice	=15000;
+		Declare a pi value		(constant)	:	const	float	pi				=3.1415;
+		
+		Here productPrice,pi are identifiers 	(naming to registeres)
+		Here 15000,3.1415 are literals			(values inside registeres)
+		If a register literal is keep on changing 		=> Variable
+		If a register literal is not changing any more 	=> Constant
+		Here int,float are datatypes (Datatypes  decides what type literal has to be stored in register)
+		
+In JS language :
+		Declare a product price (variable)	:			var 	productPrice	=15000
+		Declare a pi value		(constant)	:			const	pi				=3.1415
+
+
+		Here productPrice,pi are identifiers 	(naming to registeres)
+		Here 15000,3.1415 are literals			(values inside registeres)
+		If a register literal is keep on changing 		=> Variable
+		If a register literal is not changing any more 	=> Constant
+		Here 15000-int,3.1415-float are datatypes 
+		
+Note:
+	1.C,Cpp,Java are statically typed programming languages:
+			If a user want to assign any value to variable/constant  it must be declare it's type first.
+			
+		Ex:		float  age;
+				age=21.3;
+	2.JS,Python are dynamically typed programming languages:
+			If a user want to assign any value to variable/constant  it's type need not be declare first.
+			Based on value then type is changed.
+			
+		Ex:		age=21			
+				Here age becomes int type
+				age=21.3
+				Here age becomes float type
+				age="twenty"
+				Here age becomes string type
+
+2.Rules to decalre an Identifier
+	->An identifier can be formed by combination of alphabets,digits & special symbols (_,$)
+	->An identifier cannot starts with digit
+	->Multiple identifiers can be separated by comma
+	->You cannot decalre a keyword as an identifier
+	
+3.Types of Literals
+
+	15  		-> is a number(integer) literal
+	15.6		-> is a number(float)	literal
+	true		-> is a boolean literal
+	false		-> is a boolean literal
+	"Apple"		-> is a string literal 	(double quotes)
+	'Apple'		-> is a string literal	(single quotes)
+	`Apple`		-> is a string literal	(back tics)
+	undefined	-> defalut value 
+	null 		-> No memory allocated
+	
+	[1,2,3]					-> Array literal
+	
+	{						-> Object literal
+		'eid'		:	501,
+		'ename'		:	'Ajay'
+		'esalary'	:	15000,
+		'ecity'		:	'Hyd',
+		'eage'		:	25
+	}
+	
+	
+
+Note:
+
+	In C 	language:		int   	a;			printf("%d",a);			//46682  	(Garbage value)
+	In Java language:		int   	a;			sop(s);					//0  		
+	In JS language:			var   	a;			alert(a);				//46682  (Garbage value)
+
+Note:
+	1.Html is a error free language
+	2.Js is not a error free language
+	
+JS code compiled & run on browsers.
+Always js code compiled & run on browsers with the help of JS Engines.
+	
+		Browser			Js Engine
+		
+	1.Google chrome		V8
+	2.MS IE				Chakra
+	3.MFF				SpiderMonkey 
+	4.MSEdge			Chakra
+	5.Safari			JavaScriptCore
+__________________________________________________________________________	
+Datatypes:
+=========
+1.JS is dynamically typed programming language.
+	var  x=10
+	var fullName= `James Bond`
+2.TS is statically typed programming language.
+	let x:number=10
+	let fullName: string = `James Bond`
+	
+Types of Datatypes:
+
+	I.Primitive Datatypes		(Basic Datatypes)
+		->These datatypes can store single value in variable
+		Ex:
+			var   	x=15
+			
+		->List of primitives 	: number , boolean , string 
+	
+	II.Non-primitive Datatypes (Collection Datatypes)
+		->These datatypes can store multiple values in variable
+		Ex:
+			var 	y=[value1,value2,value3,...]
+			var 	z={key1:value,key2:value,key3:value,....}
+			
+	->List of non-primitives 	: arrays & objects
+__________________________________________________________________________
+
+Comments in JS:
+---------------
+1.Single line comments	:		//comment
+2.Multi line comment	:		/*
+									comments
+								*/
+
+6.Input & Output operations:
+============================
+Input Function:
+			1.prompt()
+Output functions:
+			1.alert('Hi1')
+            2.confirm('Hi2')
+            3.document.write('Hi3')
+            4.console.log('Hi4')
+
+8.Operators:
+	
+	1.Unary Operators
+		->Increment (++)
+		->Decrement (--)
+	2.Binary Operators
+		->Arithmetic (+,-,*,/,%)
+		->Assignment (=)
+		->Relational (<,>,<=,>=,!=,==,===)
+		->Logical  (&&,||,!)
+		->Bitwise  (&,|,^,~,<<,>>)
+	3.Ternary Operators
+		->Condition (?:)
+
+9.Control Statements:
+
+	1.Decision Making Statements
+			-> if,  if-else ,  nested-if-else ,  switch
+	2.Loop Statements
+			-> while  , do-while , for 
+	3.Jump Statements
+			-> break , continue
+__________________________________________________________________________
+
+10.Functions:
+============
+1.Non-Functional Programming Vs Functional Programming
