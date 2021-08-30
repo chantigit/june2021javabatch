@@ -1,0 +1,44 @@
+C language  /  Java language / Python language / C#.Net language / JS language:
+===============================================================================
+Function 		Method    		Function/Method		Method			Function
+
+Functions:
+==========
+1.Non-Functional Programming Vs Functional Programming
+2.How to prepare a function  / called function?
+	function 		nameOfFuntcion(parameters)
+	{
+			//body function
+	}
+3.How to use a function / calling function?
+	nameOfFuntcion(arguments)
+	
+4.Parameter Vs Argument ?
+	The variables which are present in Called Function is called as Parameter.
+	The variables which are present in Calling Function is called as Argument.
+
+5.JS Types:
+	1.Internal JS	: Preparing JS functions inside html page 
+	2.External JS 	: Preparing JS functions  in a separate file having with .js extension
+						Here external js files used by html using <script> tag inside <head> tag.
+
+6.DOM (Document Object Model/Data)
+
+	->Each tag in html file is called 1 object
+	->Root tag/object is  : html   => "document" is a object of html class
+	->Every document has 1 body & can have multiple p,div,span,b,i,.. objects
+	->For uniqueness of document objects we have to give "id" for each object
+	-> "innerHtml" 	= 	Text between tags (p,div,span,b,i,...) 
+	-> "value" 		=	Text inside <input> tag 
+				
+7.DOM Manipulation:	
+				
+	->Decalaration of dom 
+	->Set data to dom
+	->Get data from dom
+	
+Note:
+	->JS is initially used to perform form validation.
+	->JS is also used to perform DOM Manipulation.
+	->Because of DOM Manipulation feature, it used in several tech like jQuery,Ajax,Boostrap,angular,angularjs,react,nodejs,expressjs..
+	

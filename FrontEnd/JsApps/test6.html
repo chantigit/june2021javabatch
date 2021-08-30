@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM manipulation example1</title>
+        <style>
+            *
+            {
+                margin:10px;padding:5px;border:2px solid red;
+            }
+        </style>
+    </head>
+<body>
+    <p id="id1">
+        Hi
+    </p>
+    <div  id="id2">Hello</div>
+    <span  id="id3">Bye</span>
+    <p  id="id6">Hi1</p>
+    <div  id="id7">Hello1</div>
+    <span  id="id8">Bye1</span>
+    <input type="number"  id="id4" value="150">
+    <input type="number"  id="id5" value="250">
+    <input type="number"  id="input2" value="0">
+    <p id="p1">Good Morning</p>
+    <input type="text" value="Good Evening" id="input1">
+    <script>
+        //GET  =  SET
+        document.getElementById('id1').innerHTML='hi Chanti'
+        document.getElementById('id1').style.color='blue'
+        document.getElementById('id1').style.backgroundColor='yellow'
+        document.getElementById('id2').innerHTML='hello Chanti'
+        document.getElementById('id2').style.color='blue'
+        document.getElementById('id2').style.backgroundColor='yellow'
+        document.getElementById('input1').value='Good Night'
+        //Get data from id4 & id5
+        var t1=document.getElementById('id4').value
+        var t2=document.getElementById('id5').value
+        //Perform addition
+        var t3=eval(t1)+eval(t2);
+        //Set addition result to input2
+        document.getElementById('input2').value=t3
+        document.getElementById('input2').style.color='white'
+        document.getElementById('input2').style.backgroundColor='aqua'
+    </script>
+</body>
+</html>
