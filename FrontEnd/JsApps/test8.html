@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DOM manipulation example3</title>
+        <link rel="stylesheet" href="calc.css">
+    </head>
+<body>
+    <p id="p1" onclick="one()">
+        Hello1
+    </p>
+    <p id="p2" ondblclick="two()" onmouseenter="three()" onmouseleave="four()">
+        Hello2
+    </p>
+    <div>
+       Enter your Name: <input type="text" id="input1" onkeypress="five()"> <br>
+       <div id="d1"></div>
+    </div>
+    <div>
+        Enter your email:   
+        <input type="email" id="input2" value="CHANTI@GMAIL.COM" onblur="six()">
+        <br>
+        Enter your city:    
+        <input type="text"  id="input3" value="hyderabad" onfocus="seven()"> 
+    </div>
+    <script>
+         function seven(){
+            var t=document.getElementById('input3').value
+            document.getElementById('input3').value= t.toUpperCase()
+        }
+        function six(){
+            var t=document.getElementById('input2').value
+            document.getElementById('input2').value= t.toLowerCase()
+        }
+        function five(){
+            document.getElementById('d1').innerHTML= document.getElementById('input1').value
+        }
+        function one(){
+            document.getElementById('p1').innerHTML='Hello Chanti,You clicked once on this DOM'
+        }
+        function two(){
+            document.getElementById('p2').innerHTML='Hello Chanti,You clicked twice on this DOM'
+        }
+        function three(){
+            document.getElementById('p2').innerHTML='ONMOUSE ENTER EVENT IS TRIGGERED'
+            document.getElementById('p2').style.color='green'
+            document.getElementById('p2').style.backgroundColor='yellow'
+        }
+        function four(){
+            document.getElementById('p2').innerHTML='ONMOUSE LEAVE EVENT IS TRIGGERED'
+            document.getElementById('p2').style.color='pink'
+            document.getElementById('p2').style.backgroundColor='yellow'
+        }
+        
+    </script>
+</body>
+</html>

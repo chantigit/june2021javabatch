@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation Using alert()</title>
+        <script src="login.js"></script>
+    </head>
+<body>
+    <form name="loginForm" action="www.abc.com" method="get" onsubmit="return one()" onreset="return two()">
+        <table border="2px" cellspacing="10px" cellpadding="10px">
+            <caption><h3>Student Login Form</h3></caption>
+            <tr>
+                  <td>
+                      <label for="id1">
+                          Student UserId
+                      </label>
+                  </td>
+                  <td>
+                      <input type="text" id="id1" name="n1">
+                  </td>
+            </tr>
+            <tr>
+              <td>
+                  <label for="id2">
+                      Student Password
+                  </label>
+              </td>
+              <td>
+                  <input type="password" id="id2" name="n2">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                  <input type="submit" value="SignUp">
+              </td>
+              <td>
+                  <input type="reset" value="Clear">
+              </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

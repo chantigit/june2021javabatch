@@ -1,0 +1,28 @@
+JS Events:
+=========
+Event is a some kind of action(click,dblclick,mouseneter,....) on dom element.
+
+JS Events Types:
+
+	1.Mouse related events
+			click,dblclick,mouseneter,mouseleave,....
+	
+	2.Key related events	
+			keypress,keyup,keydown
+			
+	3.Focus related events
+			blur,focus
+	
+	4.Form related events
+			submit,reset
+	
+	5.Other events
+			load,unload,onchange,onselect,oncopy,....
+			
+
+Note:
+====
+	1.Onsubmit event is triggered as soon as user click on submit button	
+	2.Onreset event is triggered as soon as user click on reset button
+	3.IFF Onsubmit returns "true" then only form data submitted to server
+	4.IFF Onreset returns "true" then only form data is erased
