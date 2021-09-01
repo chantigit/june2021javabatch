@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radio Button Validation</title>
+        <script>
+            function checkData()
+            {
+                if(document.myForm1.n1.selectedIndex==0)
+                {
+                    alert('Please select degree')
+                    return false
+                }
+                else
+                {
+                    return true
+                }
+            }
+        </script>
+    </head>
+<body>
+        <form name="myForm1" action="www.chanti.com" onsubmit="return checkData()">
+            <label>Qualification:</label>
+            <select name="n1">
+                <option value="select degree">select degree</option>
+                <option value="UG">UG</option>
+                <option value="PG">PG</option>
+                <option value="PhD">PhD</option>
+            </select>
+            <br>
+            <input type="submit" value="Check Data"> 
+        </form>
+</body>
+</html>

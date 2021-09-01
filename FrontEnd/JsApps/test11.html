@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation Using div message</title>
+        <style>
+            *{margin:10px;padding:10px;}
+            div{color: red;}
+        </style>
+        <script>
+            function checkData()
+            {
+                var userid=document.myForm1.name1.value;
+                var pswd=document.myForm1.name2.value;
+                var temp=''
+                if(userid=="")
+                {
+                    temp=temp+'* Please enter userid <br>'
+                    document.getElementById('d1').innerHTML=temp
+                }
+                if(pswd=="")
+                {
+                    temp=temp+'* Please enter pswd'
+                    document.getElementById('d1').innerHTML=temp
+                }
+                else{
+                    document.getElementById('d1').style.color='blue'
+                    document.getElementById('d1').innerHTML='Userid='+userid+",Password="+pswd
+                }
+            }
+        </script>
+    </head>
+<body>
+        <form name="myForm1" action="www.chanti.com">
+            <label for="id1">UserId</label>
+            <input type="text" id="id1" name="name1">
+            
+            <br>
+            
+            <label for="id2">Password</label>
+            <input type="password" id="id2" name="name2"> 
+
+            <br>
+
+            <input type="button" value="Check Data" onclick="checkData()"> 
+            <br>
+            <div id="d1">
+
+            </div>
+        </form>
+</body>
+</html>

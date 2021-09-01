@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Radio Button Validation</title>
+        <script>
+            function checkData()
+            {
+                if(document.myForm1.n1[0].checked==false && document.myForm1.n1[1].checked==false)
+                {
+                    alert('Please select marital status')
+                    return false
+                }
+                else
+                {
+                    return true
+                }
+            }
+        </script>
+    </head>
+<body>
+        <form name="myForm1" action="www.chanti.com" onsubmit="return checkData()">
+            <label for="id1">Marital Status:</label>
+            <input type="radio" value="Married" name="n1">Married
+            <input type="radio" value="Single" name="n1">Single
+            <br>
+            <input type="submit" value="Check Data"> 
+        </form>
+</body>
+</html>

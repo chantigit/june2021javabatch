@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Validation Using span message</title>
+        <style>
+            *{margin:10px;padding:10px;}
+            span{color: red;}
+        </style>
+        <script>
+            function checkUserId()
+            {
+                var userid=document.myForm1.name1.value
+                if(userid=="")
+                {
+                    //alert('Please enter userid')
+                    document.getElementById('s1').innerHTML='* Please enter userid'
+                    document.myForm1.name1.focus()
+                }
+                else{
+                    document.getElementById('s1').innerHTML='* '
+                    document.getElementById('s1').style.color='green';
+                    //document.myForm1.name2.focus()
+                }
+            }
+            function checkPassword()
+            {
+                var pswd=document.myForm1.name2.value
+                if(pswd=="")
+                {
+                    document.getElementById('s2').innerHTML='* Please enter pswd'
+                    document.myForm1.name2.focus()
+                }
+            }
+        </script>
+    </head>
+<body>
+        <form name="myForm1" action="www.chanti.com">
+            <label for="id1">UserId</label>
+            <input type="text" id="id1" name="name1" onblur="checkUserId()">
+            <span id="s1">*</span>
+            <br>
+            
+            <label for="id2">Password</label>
+            <input type="password" id="id2" name="name2" onblur="checkPassword()"> 
+            <span id="s2">*</span>
+            <br>
+
+            <input type="button" value="Check Data" onclick="checkData()">
+        </form>
+</body>
+</html>

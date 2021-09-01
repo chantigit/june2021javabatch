@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+            <script src="login.js"></script>
+            <link rel="stylesheet" href="login.css">
     </head>
     <body>
          <header>
@@ -15,8 +16,9 @@
         </nav>
       </header>
       <hr>
-      <form name="loginForm" action="www.abc.com">
-          <table border="2px" cellspacing="10px" cellpadding="10px">
+      <table border="2px" cellspacing="10px" cellpadding="10px" align="center">
+      <form name="loginForm" action="www.abc.com" onsubmit="return one()" onreset="return two()">
+         
               <caption><h3>Student Login Form</h3></caption>
               <tr>
                     <td>
@@ -46,8 +48,9 @@
                     <input type="reset" value="Clear">
                 </td>
               </tr>
-          </table>
+       
       </form>
+    </table>
       <br><br><br><br><br><br><br><br><br><br><br><br><br>
       <hr>
       <footer>
