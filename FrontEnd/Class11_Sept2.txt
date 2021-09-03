@@ -1,0 +1,61 @@
+Core JS:
+=======
+	1.Keywords
+	2.Identifier
+	3.Literals
+	4.Variable
+	5.Constant
+	6.Input & Output operations
+	7.Datatypes
+	8.Operators
+	9.Control Statements
+	10.Non-Functional Programming Vs Functional Programming
+	11.Functions
+	12.Parameter Vs Argument
+	13.JS Types
+	14.DOM & DOM Manipulation
+	15.JS Events
+--------------------------------------------------------------
+7.Datatypes:
+============
+	Types of Datatypes:
+
+	I.Primitive Datatypes		(Basic Datatypes)
+		->These datatypes can store single value in variable
+		Ex:
+			var   	x=15
+			
+		->List of primitives 	: number , boolean , string 
+	
+	II.Non-primitive Datatypes (Collection Datatypes)
+		->These datatypes can store multiple values in variable
+		Ex:
+			var 	y=[value1,value2,value3,...]
+			var 	z={key1:value,key2:value,key3:value,....}
+			
+	->List of non-primitives 	: arrays & objects
+============================================================
+
+Strings:
+========
+Def:
+	Collection of characters is called as String.
+Representation:
+				var a='Apple';
+                var b="Apple";
+                var c=`Apple`;
+->Concatenation is a process of Joining two or more strings using + operator.
+->String index starts from ZERO & ends with lenth-1
+
+String related Functions:
+	1.toUpperCase()
+	2.toLowerCase()
+	3.indexOf()		: returns the index of given character
+	4.charAt()		: returns character of a given index
+	5.substr()		: return part of the string
+	6.endsWith()
+	7.startsWith()	
+	8.replace()
+	9.replaceAll()
+	10.trim()		
+	11.split()		: returns words from the string

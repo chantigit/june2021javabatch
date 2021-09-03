@@ -1,0 +1,92 @@
+Adv Java:
+=========
+							Prerequsites
+							
+	1.Jdbc					SQL with any DB
+	2.Servlets				UI(html,css,js) + Jdbc
+	3.Jsp					Servlets
+	4.Mvc Arch				Jdbc,Servlets,Jsp
+
+Frameworks:
+===========
+	1.Hibernate				Jdbc
+	2.Spring 				CoreJava+AdvJava+Hibernate
+	3.SpringBoot			Spring
+------------------------------------------------------------
+
+Jdbc is a API provides following 2 packages for the purpose of DB communication + CRUD operations.
+	1. 	java.sql
+	2.	javax.sql
+
+Servlet is a API provides following 2 packages for the purpose of preparing dynamic pages
+	1.	javax.servlet
+	2.	javax.servlet.http
+
+Jsp is a API provides following 2 packages for the purpose of preparing dynamic pages
+
+	1.	javax.servlet.jsp
+	2.	javax.servlet.jsp.tagext
+
+------------------------------------------------------------
+Servlet:
+========
+Def:
+		Let run java program on server to prepare dynamic pages.
+		
+
+Q1.Web browser Vs Web server:
+
+->Using Web browser, client can make request to web server & display web server response.
+->To run html,css,js we used only web browser.
+	Ex: IE,GC,MFF,ME,...
+	
+->Using Web server we can do following operations
+		->Can accept client request
+		->Validate the request
+		->Prepare response
+		->Send response back to browser
+	Ex: IIS,Apache tomcat,Jetty,WebLogic,WebSpehere,...
+->To run servlets,jsp we used only web servers.
+
+Working with Web Server i.e Apache Tomcat:
+==========================================
+Step1: Download & Installation
+Step2: Verification
+Step3: Knowing directory structure about Apache Tomcat
+
+	Root Directory	=>C:\Program Files\Apache Software Foundation\Tomcat 8.0	
+	
+	Directory1:  bin		\	tomcatX.exe		=> Start/Stop the server
+				 OR
+				 type servcies.msc on run & select tomcat then select Start/Stop
+	
+	Directory2: config   	\  server.xml  		=> To change port number
+	
+	Directory3: webapps		\	paytmapp1		=> Project Folder has to be there in this folder
+	
+	Directory4: lib			\	API related jar 		=> servlet-api.jar, jsp-api.jar
+								Container related jar	=> catalina.jar ,	jasper.jar
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,83 @@
+Web Application Directory Structure:
+====================================
+Every Web Application has standard Directory Structure, it means every developer has to follow it.
+
+
+Html Vs Xml:
+============
+					Html 							Xml(Extensible ML)
+				
+	1.It is markup langauge					1.It is markup langauge
+	
+	2.It is error free langauge				2.It is not a error free langauge
+											Using SAX & DOM compilers code gets compiled.
+	
+	3.It consist 2 types tags				3.It has only paired tags
+			1.Paiered tags
+			2.Unpaired tags
+	
+	4.File extension : .html  or .html 		4.File extension .xml
+	
+	5.Html focused how  data has be 		5.Xml focused how to describe data 	
+		displayed in browser
+	
+		<p>101</p>							<eid>		101		</eid>
+		<p>Ajay</p>							<ename>		Ajay	</ename>
+		<p>45000</p>						<esalary>	45000	</esalary>
+		
+	6.Here we used all predefined tags		6.Xml code can be written by using user defined tags
+	
+	7.Html is not support B2B app 			7.Xml is mainly used to prepare data transformation for B2B app
+	
+
+Standard syntax of XML:
+=======================
+<?XML version="1.0"?>
+<root-tag>
+		<child-tag1>
+				<attribute1>  value   </attribute1>
+				<attribute2>  value   </attribute2>
+				.....
+		</child-tag1>
+		<child-tag2>
+				<attribute1>  value   </attribute1>
+				<attribute2>  value   </attribute2>
+				....
+		</child-tag2>
+		...
+</root-tag>
+Example:
+=======
+<?XML version="1.0"?>
+<books>
+		<book>
+				<isbn>1512</isbn>
+				<name>Let Us C </name>
+				<author>YK </author>
+		</book>
+		<book>
+				<isbn>1513</isbn>
+				<name>Let Us Cpp </name>
+				<author>YK </author>
+		</book>
+		<book>
+				<isbn>1514</isbn>
+				<name>Head First Java </name>
+				<author>Orilley</author>
+		</book>
+</book>
+
+web.xml file syntax:
+====================
+<?XML version="1.0"?>
+<web-app>
+		<welcome-file-list>
+			<welcome-file>STARTUP FILE NAME (Html or Servlet)</welcome-file>
+		</welcome-file-list>
+</web-app>
+
+
+App1: Prepare a web application to execute static web page
+		Name: website1
+App2: Prepare a web application to execute dynamic web page
+App3: Prepare a web application to execute static & dynamic web page
