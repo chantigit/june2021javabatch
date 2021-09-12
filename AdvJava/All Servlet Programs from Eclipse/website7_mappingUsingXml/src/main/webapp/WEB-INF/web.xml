@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+		<servlet-class>com.chanti.controller.S1</servlet-class>
+		<servlet-name>L1</servlet-name>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>L1</servlet-name>
+		<url-pattern>/url1</url-pattern>
+	</servlet-mapping>
+</web-app>

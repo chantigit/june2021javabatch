@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Home Page</title>
+ 		<script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to Chanti It Institute</h1>
+		<nav>
+			<a href="index.html">Home</a> | 
+			<a href="about.html">About</a> | 
+			<a	href="contact.html">ContactUs</a> | 
+			<a href="#">Student SingIn</a> |
+			<a href="studentreg.html">Student SIgnUp</a>
+		</nav>
+	</header>
+	<hr>
+	<table border="2px" cellspacing="10px" cellpadding="10px" align="center">
+		<form name="loginForm" action="StudentSingIn" onsubmit="return one()"	onreset="return two()">
+
+			<caption>
+				<h3>Student Login Form</h3>
+			</caption>
+			<tr>
+				<td><label for="id1"> Student UserId </label></td>
+				<td><input type="text" id="id1" name="n1"></td>
+			</tr>
+			<tr>
+				<td><label for="id2"> Student Password </label></td>
+				<td><input type="password" id="id2" name="n2"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="SignIn"></td>
+				<td><input type="reset" value="Clear"></td>
+			</tr>
+
+		</form>
+	</table>
+
+
+
+
+
+	<hr>
+	<footer>
+		<h3>Copyright@Chanti</h3>
+	</footer>
+</body>
+</html>

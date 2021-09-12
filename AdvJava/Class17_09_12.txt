@@ -1,0 +1,217 @@
+========================================================================================
+Servlet preparation ways
+War file creation & War file deployment in tomcat
+Servlet communication/collobaration ways
+Servlet life cycle states & methods
+Servlet Scopes
+	request scope
+	session scope
+	context scope
+State Management techniques/ Session Tracking Mechanisms:
+	1.Sessions
+	2.Cookies
+	3.Hidden Form Field
+	4.Url rewriting
+CRUD Operations
+Servlet Mapping
+ServletConfig interface Vs ServletContext  interface
+Filters & Listerners
+=======================================================================================
+web.xml:
+-------
+<?XML version="1.0"?>
+<web-app>
+		<welcome-file-list>
+				<welcome-file> index.html </welcome-file>
+		</welcome-file-list>
+		<servlet>
+					<servlet-class>	S1		</servlet-class>
+					<servlet-name> 	L1		</servlet-name> 
+		</servlet>
+		<servlet-mapping>
+					<servlet-name>	L1		</servlet-name>
+					<url-pattern>	/url1	</url-pattern>
+		</servlet-mapping>
+		<servlet>
+					<servlet-class>	S2		</servlet-class>
+					<servlet-name> 	L2		</servlet-name> 
+		</servlet>
+		<servlet-mapping>
+					<servlet-name>	L2		</servlet-name>
+					<url-pattern>	/url2	</url-pattern>
+		</servlet-mapping>
+</web-app>
+
+=======================================================================================
+
+ServletConfig interface Vs ServletContext  interface:
+=====================================================
+ServletConfig interface:
+------------------------
+1.ServletConfig interface belongs to javax.servlet package
+2.When a particular object can be used by single servlet then store that into config object.
+3.Per servlet one config object is given
+4.Config object is public or global to single servlet
+5.We can store/set config object into inside web.xml file using <init-param> tag.
+6.<init-param> tag stores data in key , value paris
+	key 	=>  <param-name>
+	value 	=>	<param-value>
+7.<init-param> tag  should prepared inside <servlet> tag.
+8.To sccess/get config object from web.xml file we used "getInitParameter(key)" method.
+	->Create object	:  	ServletConfig    object=getServletConfig();
+	->Call method	:	object.getInitParameter(key);
+9.This object gets creates when servlet is initialized & destroyed after completion of servlet work.
+
+ServletContext  interface:
+-------------------------
+1.ServletContext interface belongs to javax.servlet package
+2.When a particular object can be used by all servlets then store that into context object.
+3.All servlets one config object is given
+4.Context object is public or global to all servlets
+5.We can store/set context object into inside web.xml file using <context-param> tag.
+6.<context-param> tag stores data in key , value paris
+	key 	=>  <param-name>
+	value 	=>	<param-value>
+7.<context-param> tag  should prepared outside all <servlet> tags.
+8.To sccess/get context object from web.xml file we used "getInitParameter(key)" method.
+	->Create object	:  	ServletContext   object=getServletContext();
+	->Call method	:	object.getInitParameter(key);
+9.This object gets created when web app deployed into web server  & destroyed after shutdown the container.
+
+
+Filter:
+-------
+https://www.javatpoint.com/servlet-filter
+
+Listeners:
+-----------
+https://www.javatpoint.com/Event-and-Listener-in-Servlet
+
+
+	Listener are worked in different Scopes of servlet
+	
+	SCOPE				INTERFACE NAME							METHODS
+
+	1.request scope	-> ServletRequestListener interface		=> requestInitialized()  	 & requestDestroyed()
+	2.session scope -> HttpSessionListener  interface		=> sessionCreated()  		 & sessionDestroyed()
+	3.context scope -> ServletContextListener interface		=> contextInitialized()   	 & contextDestroyed()
+
+Preparation:
+	class	MyListerner1	implements	HttpServletRequestListener,HttpSessionListener,ServletContextListener
+	{
+		6 methods
+	}
+
+Registering / Mapping in web.xml file:
+	<listener>
+		<listener-class>	MyListerner1		</listener-class>	
+	</listener>
+
+
+Servlet Vs Filter Vs Listener:
+==============================
+
+how to prepare servlet ?
+	class MyServlet implements Servlet
+	{
+			getServletConfig(),getServletInfo()
+			init(),service(-,-),destrory()
+	}
+how to map servlet in web.xml ?
+		<servlet>
+					<servlet-class>	MyServlet	</servlet-class>
+					<servlet-name> 	L1		</servlet-name> 
+		</servlet>
+		<servlet-mapping>
+					<servlet-name>	L1		</servlet-name>
+					<url-pattern>	/url1	</url-pattern>
+		</servlet-mapping>
+------------------------------------------------------------------
+how to prepare filter ?
+	class MyFilter implements Filter
+	{
+			init(),doFilter(-,-,FilterChain),destrory()
+	}
+how to register filter in web.xml ?
+		<filter>
+					<filter-class>	MyFilter	</filter-class>
+					<filter-name> 	L1			</filter-name> 
+		</filter>
+		<filter-mapping>
+					<filter-name>	L1		</filter-name>
+					<url-pattern>	/url1	</url-pattern>
+		</filter-mapping>
+------------------------------------------------------------------
+how to prepare listerner ?
+
+	class MyListener1	implements  HttpServletRequestListener
+	{
+			requestInitialized()  	 & requestDestroyed()
+	}
+	class MyListener2	implements  HttpSessionListener
+	{
+			sessionCreated()  		 & sessionDestroyed()
+	}
+	class MyListener3	implements  ServletContextListener
+	{
+			contextInitialized()   	 & contextDestroyed()
+	}
+
+how to register listerner in web.xml ?
+	
+	<listerner>
+			<listerner-class> L1 </listerner-class>
+	</listerner>
+	<listerner>
+			<listerner-class> L2 </listerner-class>
+	</listerner>
+	<listerner>
+			<listerner-class> L3 </listerner-class>
+	</listerner>
+	
+
+------------------------------------------------------------------
+Interview Questions on Servlets:
+================================
+Q5.how to Configuring tomcat to eclispe(IDE)
+
+Q6.Explain "directory structure" of an web application (Static & Dynamic)?
+
+Q7.Static Pages(html,css,js,jpeg) execution on Web server
+
+Q8.XML
+
+Q9.Html Vs XML
+
+Q10.web.xml syntax
+
+Q11.Web server Vs Web container
+
+Q12.Servlet API  & Servlet 3 Preparation ways
+
+Q13.Dynamic Pages(servlet) execution on Web server
+
+Q14.Static(html) & Dynamic Pages(servlet) execution on Web server
+
+Q15.CRUD application 
+
+Q16.war file creation & war deployement
+
+Q17.Servlet life cycle
+
+Q18.Servlet mapping	
+	1.Using xml tags inside web.xml			(8 lines)
+	OR
+	2.Using annotation insdie Servlet class		(1 line)
+
+Q19.ServletConfig Vs ServletContext	(**********************)
+
+Q20.Servlet 3 Communication/Chaining  approaches:
+
+Q21.Servlet 3 different Scopes 
+
+Q22.4 State management tech/Session tracking mech
+
+Q23. Filter
+
+Q24. Listener

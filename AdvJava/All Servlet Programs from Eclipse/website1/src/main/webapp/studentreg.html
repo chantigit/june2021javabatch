@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Home Page</title>
+ 		<script src="scripts.js"></script>
+        <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<header>
+		<h1>Welcome to Chanti It Institute</h1>
+		<nav>
+			<a href="index.html">Home</a> | 
+			<a href="about.html">About</a> | 
+			<a href="contact.html">ContactUs</a> | 
+			<a href="studentlogin.html">Student SingIn</a> |
+			<a href="#">Student SIgnUp</a>
+		</nav>
+	</header>
+	<hr>
+	<table border="2px" cellspacing="10px" cellpadding="10px" align="center">
+		<form name="regForm" action="StudentSignUp" onsubmit=""	onreset="">
+
+			<caption>
+				<h3>Student Registration Form</h3>
+			</caption>
+			<tr>
+				<td><label for="id1"> Full Name </label></td>
+				<td><input type="text" id="id1" name="n1"></td>
+			</tr>
+			<tr>
+				<td><label for="id2"> UserId </label></td>
+				<td><input type="text" id="id2" name="n2"></td>
+			</tr>
+			<tr>
+				<td><label for="id3"> Password </label></td>
+				<td><input type="password" id="id3" name="n3"></td>
+			</tr>
+			<tr>
+				<td><label for="id4"> Courses </label></td>
+				<td>
+					<input type="checkbox" name="n4" id="id4" value="Java">Java
+					<input type="checkbox" name="n4" id="id4" value="Python">Python
+					<input type="checkbox" name="n4" id="id4" value="Ui">Ui
+				</td>
+			</tr>
+			<tr>
+				<td><label for="id5"> Qualification </label></td>
+				<td><input type="text" id="id5" name="n5"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="SignIn"></td>
+				<td><input type="reset" value="Clear"></td>
+			</tr>
+
+		</form>
+	</table>
+
+
+
+
+
+	<hr>
+	<footer>
+		<h3>Copyright@Chanti</h3>
+	</footer>
+</body>
+</html>

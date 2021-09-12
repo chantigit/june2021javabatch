@@ -1,0 +1,100 @@
+App1: Prepare a web application to execute static web page
+		Name: website1
+App2: Prepare a web application to execute dynamic web page
+App3: Prepare a web application to execute static & dynamic web page
+========================================================================================
+Servlet:
+++++++++
+Servlet API provides 2 packages
+
+	1.	javax.servlet
+	2.	javax.servlet.http
+	
+Servlet preparation ways:
+=========================
+	Servlet can be prepared in 3 ways.
+	
+1.Using Servlet 		interface
+2.Using GenericServlet 	abstract class
+3.Using HttpServlet 	abstract class
+
+1.Using Servlet 		interface:
+----------------------------------
+1.Code:
+		clas  MyServlet		implements Servlet
+		{
+		}
+		
+2.Servlet interface belongs to javax.servlet package
+3.Servlet interface having 5 UIM
+
+	ServletConfig	getServletConfig()
+	String			getServletInfo()
+	void			init()
+	void			service(ServletRequest,ServletResponse)throws ServletException,IOException
+	void 			destroy()
+
+Drawback:
+	If developer select this appraoch to create Servlet then he must implements 5 UIM in every class.
+	
+2.Using GenericServlet 		abstract clas:
+------------------------------------------
+1.Code:
+		clas  MyServlet		extends   GenericServlet
+		{
+		}
+		
+2.GenericServlet abstract class belongs to javax.servlet package
+3.GenericServlet is a implemented class of Servlet interface & have 1 UIM.
+
+	void			service(ServletRequest,ServletResponse)throws ServletException,IOException
+
+Adv:
+	If developer select this appraoch to create Servlet then he implements only 1 UIM in every class.
+Drawback:
+	GenericServlet class cannot provide Http related methods.
+	
+3.Using HttpServlet 		abstract clas:
+------------------------------------------
+1.Code:
+		clas  MyServlet		extends   HttpServlet
+		{
+		}
+		
+2.HttpServlet abstract class belongs to javax.servlet.http package
+3.HttpServlet abstract class is a child of GenericServlet abstract class & It has 0 UIM + 7 http implement methods.
+
+	void doGet(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+	void doPost(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+	void doPut(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+	void doDelete(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+	void doHeade(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+	void doTrace(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+	void doOptions(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+
+Adv:
+	1.If developer select this appraoch to create Servlet then he need not to implement any methods.
+	2.If developer select this appraoch to create Servlet then he can access 12 methods.
+	3.Among 7 http methods + 1 service() method, developer can override any one of the method to
+	  process the request.
+	  
+
+Sample Code:
+
+		import 	  	java.io.*;
+		import   	javax.servlet.*;
+		import   	javax.servlet.http.*;
+		
+		import		javax.servlet.annotation.*;
+		@WebServlet
+		
+		class  MyServlet		extends   HttpServlet
+		{
+			@Override
+			public void doGet(HttServletRequest,HttpServletResponse)throws ServletException,IOException
+			{
+					//You have to write code here that servlet want to do.
+			}
+		}
+App2: Prepare a web application to execute dynamic/servlet web page
+	Name: website2

@@ -1,0 +1,179 @@
+App1: Prepare a web application to execute static web page
+		Name: website1
+App2: Prepare a web application to execute dynamic web page
+App3: Prepare a web application to execute static & dynamic web page
+========================================================================================
+
+response.setContentType("text/html");
+PrintWriter out = response.getWriter();
+out.println("");
+
+
+War file creation & War file deployment in tomcat
+Servlet communication/collobaration ways
+Servlet life cycle states & methods
+Servlet Scopes
+=======================================================================================
+Q1.Difference between sendRedirect() & forward()  ?
+
+Servlet Scopes:
+===============
+	Servlet Scopes tells us that how much extend a servlet data is visible to other servlet.
+
+Servlet scope can be maintained by 3 ways
+
+1.request object scope: whatever data is set in request object that is get/accessed by requested servlet
+2.session object scope: whatever data is set in session object that is get/accessed by all servlets until session gets expired
+3.context object scope: whatever data is set in context object that is get/accessed by all servlets until container gets down
+
+Note:
+1.request is a object of HttpServletRequest interface
+2.session is a object of HttpSession 		interface
+3.context is a object of ServletContext		interface
+4.All above 3 objects can use following 3 methods commonly
+	->To set data into any object:		void	setAttribute(String key,Object	value)
+	->To get data from any object:		Object	getAttribute(String key)
+	->To remove data in any object:		void	removeAttribute(String key)
+=======================================================================================
+
+Http Protocol:
+-------------
+
+Q1.What is Http Stateless behaviour ?
+
+Ans:
+	Http protocol is used to send request from browser  to server and send response from server to browser.
+	Http protocol cannot send info regarding client(who made request) to the server.
+	This by default nature of Http protocol.
+	
+Q2.What is Http Statefull behaviour ?
+	In Http Statefull behaviour, with the help of http protocol user can send client info to server. 
+	So that server can identity that who made the request everytime.
+	
+Q3.How to convert http from Stateless to Statefull behaviour ?
+Ans:
+	Using following 4 techniques we can convert http from Stateless to Statefull behaviour.
+	
+	1.Sessions
+	2.Cookies
+	3.Url Rewriting
+	4.Hidden Form field
+	
+Session Management techniques/ Session Tracking Mechanisms:
+===========================================================
+
+	1.Sessions
+	2.Cookies
+	3.Hidden Form Field
+	4.Url rewriting 
+	
+	
+	
+1.Sessions:
+===========
+A session is a interval time in which client & server can communicate with each other.
+During session, all client activities can be tracked by that session until session gets expired.
+
+
+Ex:
+	gmail 		signin & signout
+	netbanking 	signin & signout
+	
+Q1.	How to create session object ?
+	HttpSession   sessionobject=request.getSession();
+Q2. How to set data into the session ?
+			sessionobject.setAttribute(k,v)
+Q3. How to get data from the session ?
+			sessionobject.getAttribute(k)
+Q4.	How to remove data with the session ?
+			sessionobject.setAttribute(k,null)
+			Or
+			sessionobject.removeAttribute(k)
+Q5. How many ways we can expire the session ?
+	Way1:Taking prompt from client
+			sessionobject.invalidate();
+	Way2:Setting time for session at server side
+			1.Calling setMaxInActiveInterval(sec) method
+			Or
+			2.Using XML file
+				<session-config>
+						<session-timeout>sec</session-timeout>
+				</session-config>
+
+
+
+
+
+
+
+
+2.Cookies:
+==========
+Def:
+	A cookie is piece of memory in browser to username,pswd,..   which are stored by server.
+	
+
+Q1. How to set data into the cookie ?
+		
+		
+Q2. How to get data from the cookie ?
+
+		
+
+Q3.How to remove data with the session ?
+
+	
+	
+
+
+
+Types of cookies:
+
+	1.Impersistent cookie	:	As long as browser closed then cookie is deleted from browser
+	2.Persistent cookie		:	
+	
+
+4.Hidden Form field:
+====================
+In case of Hidden Form Field a hidden (invisible) textfield is used for maintaining the state of an user.
+In such case, we store the information in the hidden field and get it from another server.
+This approach is better if we have to submit form in all the pages and we don't want to depend on the browser.
+
+syntax:
+
+	<input type="hidden" name="name1" value="Chanti">  
+
+
+Advantages:
+
+	->It will always work whether cookie is disabled or not(browser independent)..
+	
+Disadvantages:
+
+	->Extra form submission is required on each pages.
+	->Only textual information can be used.
+
+
+
+
+
+
+
+
+3 . URL Rewriting:
+=================
+In URL rewriting, we append a token or identifier to the URL of the next resource. 
+
+We can send parameter name/value pairs using the following format:
+
+url name1=value1 name2=value2  .....
+
+Advantages:
+
+	->It will always work whether cookie is disabled or not (browser independent).
+	->Extra form submission is not required on each pages.
+	
+Disadvantages:
+
+	->It will work only with links.
+	->It can send Only textual information.

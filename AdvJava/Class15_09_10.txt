@@ -1,0 +1,100 @@
+========================================================================================
+War file creation & War file deployment in tomcat
+Servlet communication/collobaration ways
+Servlet life cycle states & methods
+Servlet Scopes
+State Management techniques/ Session Tracking Mechanisms:
+	1.Sessions
+	2.Cookies
+	3.Hidden Form Field
+	4.Url rewriting 
+=======================================================================================
+
+2.Cookies:
+==========
+Def:
+	A cookie is a piece of memory in browser to store username,pswd,..   which are send by server.
+Flow of actions:
+	1.
+	2.
+	3.
+	4.
+	5.
+	6.
+	
+Q1. How to create cookie object &  How to set data into the cookie ?	
+		
+		Cookie   cookieobjectname=new   Cookie(String key,String value);
+		
+Q2. How to send cookie object to the browser
+
+		response.addCookie(cookieobjectname);
+
+Q3. How to get cookies from browser ?
+
+		request.getCookies()
+
+
+
+	
+	
+
+
+
+Types of cookies:
+
+	1.Impersistent cookie	:	As long as browser closed then cookie is deleted from browser
+								Also called as Default Cookie.
+								
+	2.Persistent cookie		:	Using "setMaxAge(sec)" we can save cookie in browser for particular time.
+								It is configurable cookie.
+	
+
+
+
+
+
+4.Hidden Form field:
+====================
+In case of Hidden Form Field a hidden (invisible) textfield is used for maintaining the state of an user.
+In such case, we store the information in the hidden field and get it from another server.
+This approach is better if we have to submit form in all the pages and we don't want to depend on the browser.
+
+syntax:
+
+	<input type="hidden" name="name1" value="Chanti">  
+
+
+Advantages:
+
+	->It will always work whether cookie is disabled or not(browser independent)..
+	
+Disadvantages:
+
+	->Extra form submission is required on each pages.
+	->Only textual information can be used.
+
+
+
+
+
+
+
+
+3 . URL Rewriting:
+=================
+In URL rewriting, we append a token or identifier to the URL of the next resource. 
+
+We can send parameter name/value pairs using the following format:
+
+url name1=value1 name2=value2  .....
+
+Advantages:
+
+	->It will always work whether cookie is disabled or not (browser independent).
+	->Extra form submission is not required on each pages.
+	
+Disadvantages:
+
+	->It will work only with links.
+	->It can send Only textual information.

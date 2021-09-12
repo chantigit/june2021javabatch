@@ -1,0 +1,11 @@
+App1: Prepare a web application to execute static web page
+		Name: website1
+App2: Prepare a web application to execute dynamic web page
+App3: Prepare a web application to execute static & dynamic web page
+========================================================================================
+App2: Prepare a web application to execute dynamic/servlet web page
+	Name: website2
+	
+response.setContentType("text/html");
+PrintWriter out = response.getWriter();
+out.println("");

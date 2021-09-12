@@ -1,0 +1,30 @@
+App1: Prepare a web application to execute static web page
+		Name: website1
+App2: Prepare a web application to execute dynamic web page
+App3: Prepare a web application to execute static & dynamic web page
+========================================================================================
+App2: Prepare a web application to execute dynamic/servlet web page
+	Name: website2
+	
+response.setContentType("text/html");
+PrintWriter out = response.getWriter();
+out.println("");
+
+=======================================================================================
+Servlet communication/collobaration ways:
+-----------------------------------------
+Servlets can be communicated in 3 ways
+
+1.Using html <a> tag 
+
+syntax:
+		<a 	href='ServletName'>   Link Text  </a>
+		
+2.Using sendRedirect() 			method from HttpServletResponse interface
+syntax:
+
+	response.sendRedirect("ServletName");
+	
+3.Using include() & forward() 	methods from DistpactherServlet interface
+
+

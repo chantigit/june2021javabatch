@@ -1,0 +1,68 @@
+index.html
+
+	<h1>  Basic Details  </h1>
+	<form action="S1">
+		first name : <input type="text" name="firstName"> <br>
+		last name : <input type="text" name="lastName"> <br>
+		<input type="submit" value="NEXT">
+	</form>
+	
+S1.java
+
+		String firstName = request.getParameter("firstName");
+		String lastName = request.getParameter("lastName");
+		Cookie   c1=new   Cookie("firstName",firstName);
+		Cookie   c2=new   Cookie("lastName",lastName);
+		response.addCookie(c1);
+		response.addCookie(c2);
+		response.sendRedirect("form2.html");
+
+form2.html
+	<h1>  Education Details  </h1>
+	<form action="S2">
+		Highest qualification : <input type="text" name="qualification"> <br>
+		Year of Passing : <input type="number" name="year"> <br>
+		<input type="submit" value="NEXT">
+	</form>
+	
+S2.java
+
+		String qualification = request.getParameter("qualification");
+		String year = request.getParameter("year");
+		Cookie   c1=new   Cookie("qualification",qualification);
+		Cookie   c2=new   Cookie("year",year);
+		response.addCookie(c1);
+		response.addCookie(c2);
+		response.sendRedirect("form3.html");
+		
+form3.html
+	<h1>  Company Details  </h1>
+	<form action="S3">
+		Company Name: <input type="text" name="company"> <br>
+		Role : <input type="text" name="role"> <br>
+		<input type="submit">
+	</form>
+	
+S3.java
+
+		String company = request.getParameter("company");
+		String role = request.getParameter("role");
+		Cookie   c1=new   Cookie("company",company);
+		Cookie   c2=new   Cookie("role",role);
+		response.addCookie(c1);
+		response.addCookie(c2);
+		response.sendRedirect("Final");
+
+Final.java
+
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		//1.Reading all cookies from browser memory
+		Cookie[] cookies = request.getCookies();
+		//2.Write them on browser
+		out.println("<h1>All Cookie are:</h1>");
+		for (Cookie cookie : cookies)
+		{
+			out.println("<h3> Key ="+cookie.getName()+", Value="+cookie.getValue()+" </h3>");
+		}
+		out.println("<a href='index.html'> Add Next User </a>");
