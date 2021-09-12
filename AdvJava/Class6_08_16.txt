@@ -18,7 +18,10 @@ Customer
 	pswd
 	name
 	phone
+	interestdin
 	city
+	createdDate
+	modifiedDate
 
 Task1: Use "isCustomerExist()" method to update & delete customer id
 Task2: Add following method in DAO layer
